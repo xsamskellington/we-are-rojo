@@ -3,6 +3,7 @@ import Image from 'next/image';
 import './styles.css';
 import { advertising, episodic, features, socialMedia } from './data';
 import Rojo from '../images/rojo.svg';
+import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -16,9 +17,9 @@ const Header = () => {
           <button className="icon">{features.title}</button>
           <div className="dropdown-menu">
             {features.projects.map((project) => (
-              <p className="options" key={project.title}>
-                {project.title}
-              </p>
+              <Link href={project.href} key={project.title}>
+                <p className="options">{project.title}</p>
+              </Link>
             ))}
           </div>
         </div>
@@ -26,9 +27,9 @@ const Header = () => {
           <button className="icon">{episodic.title}</button>
           <div className="dropdown-menu">
             {episodic.projects.map((project) => (
-              <p className="options" key={project.title}>
-                {project.title}
-              </p>
+              <Link href={project.href} key={project.title}>
+                <p className="options">{project.title}</p>
+              </Link>
             ))}
           </div>
         </div>
@@ -36,9 +37,9 @@ const Header = () => {
           <button className="icon">{advertising.title}</button>
           <div className="dropdown-menu">
             {advertising.projects.map((project) => (
-              <p className="options" key={project.title}>
-                {project.title}
-              </p>
+              <Link href={project.href} key={project.title}>
+                <p className="options">{project.title}</p>
+              </Link>
             ))}
           </div>
         </div>

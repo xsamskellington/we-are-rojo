@@ -29,7 +29,6 @@
   border-bottom-right-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
   opacity: 0;
-  pointer-events: none;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
@@ -37,12 +36,17 @@
 .dropdown > .icon:focus + .dropdown-menu {
   opacity: 1;
   transform: translateY(0);
-  pointer-events: auto;
 }
 
 .options {
   padding: 0.5em;
   width: max-content;
+  color: white;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }
 
 .options:hover {
@@ -76,5 +80,3 @@
   background-color: rgba(70, 70, 70, 0.5);
   font-weight: 500;
 }
-
-/* agregar clase despues de clickeado */

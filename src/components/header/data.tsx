@@ -32,31 +32,31 @@ export const features = {
   projects: [
     {
       title: 'Ecos de un Crimen',
-      src: 'asdasd',
+      href: '/features/ecos-de-un-crimen',
     },
     {
       title: '30 Noches con mi Ex',
-      src: 'asdasd',
+      href: '/features/30-noches-con-mi-ex',
     },
     {
       title: 'Adiós, Buenos Aires',
-      src: 'asdasd',
+      href: '/features/adios-buenos-aires',
     },
     {
       title: 'Los Impresentables',
-      src: 'asdasd',
+      href: '/features/los-impresentables',
     },
     {
       title: 'El Método Tangalanga',
-      src: 'asdasd',
+      href: '/features/el-metodo-tangalanga',
     },
     {
       title: 'Misántropo',
-      src: 'asdasd',
+      href: '/features/misantropo',
     },
     {
       title: 'Jaque Mate',
-      src: 'asdasd',
+      href: '/features/jaque-mate',
     },
   ],
 };
@@ -66,15 +66,15 @@ export const episodic = {
   projects: [
     {
       title: 'Quien mató a Sara?',
-      src: 'asdasd',
+      href: '/episodic/quien-mato-a-sara',
     },
     {
       title: 'División Palermo',
-      src: 'asdasd',
+      href: '/episodic/division-palermo',
     },
     {
       title: 'CTRL + ALT DESIRE',
-      src: 'asdasd',
+      href: '/episodic/ctrl-alt-desire',
     },
   ],
 };
@@ -84,19 +84,19 @@ export const advertising = {
   projects: [
     {
       title: 'Burger King',
-      src: 'asdasd',
+      href: '/advertising/burger-king',
     },
     {
       title: 'Corona - Sunbrew',
-      src: 'asdasd',
+      href: '/advertising/corona-sunbrew',
     },
     {
       title: 'Samsung - Tech Goes Green',
-      src: 'asdasd',
+      href: '/advertising/samsung-tech-goes-green',
     },
     {
       title: 'Swarovski - Metamorphosis',
-      src: 'asdasd',
+      href: '/advertising/swarovski-metamorphosis',
     },
   ],
 };
