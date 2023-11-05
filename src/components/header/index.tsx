@@ -44,7 +44,9 @@ const Header = () => {
           </div>
         </div>
         <div className="dropdown">
-          <button className="icon">About</button>
+          <Link href="/about" className="icon">
+            About
+          </Link>
         </div>
       </div>
 
