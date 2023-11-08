@@ -1,8 +1,5 @@
 import Instagram from '../images/instagram.svg';
-import Facebook from '../images/facebook.svg';
-import Mail from '../images/gmail.svg';
 import Linkedin from '../images/linkedin.svg';
-import Youtube from '../images/youtube.svg';
 
 export const socialMedia = [
   {
@@ -10,20 +7,8 @@ export const socialMedia = [
     svg: Instagram,
   },
   {
-    title: 'Facebook',
-    svg: Facebook,
-  },
-  {
-    title: 'Mail',
-    svg: Mail,
-  },
-  {
     title: 'Linkedin',
     svg: Linkedin,
-  },
-  {
-    title: 'Youtube',
-    svg: Youtube,
   },
 ];
 
