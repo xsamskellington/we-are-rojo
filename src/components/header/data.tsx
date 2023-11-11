@@ -5,10 +5,12 @@ export const socialMedia = [
   {
     title: 'Instagram',
     svg: Instagram,
+    href: 'https://www.instagram.com/wearerojostudio/',
   },
   {
     title: 'Linkedin',
     svg: Linkedin,
+    href: 'https://www.linkedin.com/company/wearerojo/',
   },
 ];
 

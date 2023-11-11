@@ -28,13 +28,11 @@
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-  opacity: 0;
   transform: translateY(-10px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 .dropdown > .icon:focus + .dropdown-menu {
-  opacity: 1;
   transform: translateY(0);
 }
 
