@@ -1,0 +1,32 @@
+.division-palermo-container {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  overflow: hidden;
+  color: white;
+}
+
+.info-container {
+  padding: 30px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.credits {
+  width: 100%;
+  padding: 30px;
+  padding-left: 0;
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+span {
+  font-weight: 700;
+}
