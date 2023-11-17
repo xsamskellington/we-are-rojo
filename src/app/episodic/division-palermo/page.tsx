@@ -1,11 +1,11 @@
-import './styles.css';
+import '../../pagesStyles.css';
 import VideoPlayer from '@/components/videoPlayer';
 
 const Page = () => {
   return (
     <>
-      <div className="division-palermo-container">
-        <VideoPlayer src={'/DivisionPalermo.mp4'} image={''} />
+      <div className="page-container">
+        <VideoPlayer src={'/episodic/DivisionPalermo.mp4'} image={''} />
         <div className="info-container">
           <h1 className="title">División Palermo</h1>
           <div className="credits">
