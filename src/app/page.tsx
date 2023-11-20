@@ -8,6 +8,7 @@ const Home = () => {
           className="video"
           controlsList="nodownload"
           autoPlay
+          loop
           // poster={image}
         >
           <source src={'/rojoReel.mp4'} type="video/mp4" />

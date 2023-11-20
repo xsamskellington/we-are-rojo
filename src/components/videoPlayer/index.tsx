@@ -2,7 +2,7 @@ import './styles.css';
 
 export interface VideoPlayerProps {
   src: string;
-  image: string;
+  image?: string;
 }
 
 const VideoPlayer = ({ src, image }: VideoPlayerProps) => {
