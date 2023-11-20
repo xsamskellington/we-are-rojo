@@ -1,0 +1,25 @@
+.about-container {
+  padding: 30px;
+  display: flex;
+  height: 13em;
+}
+
+.about-text {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text > p {
+  margin-bottom: 20px;
+}
+
+.social-text {
+  width: 50%;
+  margin-left: 80px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

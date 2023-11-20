@@ -5,10 +5,12 @@ export const socialMedia = [
   {
     title: 'Instagram',
     svg: Instagram,
+    href: 'https://www.instagram.com/wearerojostudio/',
   },
   {
     title: 'Linkedin',
     svg: Linkedin,
+    href: 'https://www.linkedin.com/company/wearerojo/',
   },
 ];
 
@@ -39,10 +41,10 @@ export const features = {
       title: 'Misántropo',
       href: '/features/misantropo',
     },
-    {
-      title: 'Jaque Mate',
-      href: '/features/jaque-mate',
-    },
+    // {
+    //   title: 'Jaque Mate',
+    //   href: '/features/jaque-mate',
+    // },
   ],
 };
 
@@ -57,10 +59,10 @@ export const episodic = {
       title: 'División Palermo',
       href: '/episodic/division-palermo',
     },
-    {
-      title: 'CTRL + ALT DESIRE',
-      href: '/episodic/ctrl-alt-desire',
-    },
+    // {
+    //   title: 'CTRL + ALT DESIRE',
+    //   href: '/episodic/ctrl-alt-desire',
+    // },
   ],
 };
 
