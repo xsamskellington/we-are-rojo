@@ -12,6 +12,7 @@ const Features = () => {
     if (
       featuresMenu.current &&
       openFeatures &&
+      featuresMenu.current instanceof HTMLDivElement &&
       !featuresMenu.current.contains(e.target)
     ) {
       setOpenFeatures(false);

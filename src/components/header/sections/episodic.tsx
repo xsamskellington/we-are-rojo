@@ -12,6 +12,7 @@ const Episodic = () => {
     if (
       episodicMenu.current &&
       openEpisodic &&
+      episodicMenu.current instanceof HTMLDivElement &&
       !episodicMenu.current.contains(e.target)
     ) {
       setOpenEpisodic(false);

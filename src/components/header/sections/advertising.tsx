@@ -12,6 +12,7 @@ const Advertising = () => {
     if (
       advertisingMenu.current &&
       openAdvertising &&
+      advertisingMenu.current instanceof HTMLDivElement &&
       !advertisingMenu.current.contains(e.target)
     ) {
       setOpenAdvertising(false);
