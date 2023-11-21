@@ -7,17 +7,11 @@ import { episodic } from '../data';
 const Episodic = () => {
   const [openEpisodic, setOpenEpisodic] = useState(false);
   const episodicMenu = useRef<HTMLDivElement>(null);
-  const jsdom = require('jsdom');
-  const { JSDOM } = jsdom;
-
-  const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
-  const document = dom.window.document;
 
   const closeEpisodic = (e: any) => {
     if (
       episodicMenu.current &&
       openEpisodic &&
-      episodicMenu.current instanceof HTMLDivElement &&
       !episodicMenu.current.contains(e.target)
     ) {
       setOpenEpisodic(false);

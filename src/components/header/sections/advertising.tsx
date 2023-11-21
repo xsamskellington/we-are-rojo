@@ -7,12 +7,6 @@ import { advertising } from '../data';
 const Advertising = () => {
   const [openAdvertising, setOpenAdvertising] = useState(false);
   const advertisingMenu = useRef<HTMLDivElement>(null);
-  const jsdom = require('jsdom');
-  const { JSDOM } = jsdom;
-
-  const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
-  const document = dom.window.document;
-
   const closeAdvertising = (e: any) => {
     if (
       advertisingMenu.current &&

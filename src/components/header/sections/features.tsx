@@ -7,17 +7,11 @@ import { features } from '../data';
 const Features = () => {
   const [openFeatures, setOpenFeatures] = useState(false);
   const featuresMenu = useRef<HTMLDivElement>(null);
-  const jsdom = require('jsdom');
-  const { JSDOM } = jsdom;
-
-  const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>');
-  const document = dom.window.document;
 
   const closeFeaturesMenus = (e: any) => {
     if (
       featuresMenu.current &&
       openFeatures &&
-      featuresMenu.current instanceof HTMLDivElement &&
       !featuresMenu.current.contains(e.target)
     ) {
       setOpenFeatures(false);
