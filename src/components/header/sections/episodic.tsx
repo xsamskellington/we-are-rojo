@@ -6,7 +6,7 @@ import { episodic } from '../data';
 
 const Episodic = () => {
   const [openEpisodic, setOpenEpisodic] = useState(false);
-  const episodicMenu = useRef(null);
+  const episodicMenu = useRef<HTMLDivElement>(null);
 
   const closeEpisodic = (e: any) => {
     if (

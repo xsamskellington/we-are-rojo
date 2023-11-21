@@ -6,7 +6,7 @@ import { features } from '../data';
 
 const Features = () => {
   const [openFeatures, setOpenFeatures] = useState(false);
-  const featuresMenu = useRef(null);
+  const featuresMenu = useRef<HTMLDivElement>(null);
 
   const closeFeaturesMenus = (e: any) => {
     if (
