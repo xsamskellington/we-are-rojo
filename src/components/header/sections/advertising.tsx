@@ -8,7 +8,7 @@ const Advertising = () => {
   const [openAdvertising, setOpenAdvertising] = useState(false);
   const advertisingMenu = useRef(null);
 
-  const closeAdvertising = (e) => {
+  const closeAdvertising = (e: any) => {
     if (
       advertisingMenu.current &&
       openAdvertising &&
