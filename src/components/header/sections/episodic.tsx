@@ -8,7 +8,7 @@ const Episodic = () => {
   const [openEpisodic, setOpenEpisodic] = useState(false);
   const episodicMenu = useRef(null);
 
-  const closeEpisodic = (e) => {
+  const closeEpisodic = (e: any) => {
     if (
       episodicMenu.current &&
       openEpisodic &&

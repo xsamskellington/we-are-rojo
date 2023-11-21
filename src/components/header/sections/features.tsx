@@ -8,7 +8,7 @@ const Features = () => {
   const [openFeatures, setOpenFeatures] = useState(false);
   const featuresMenu = useRef(null);
 
-  const closeFeaturesMenus = (e) => {
+  const closeFeaturesMenus = (e: any) => {
     if (
       featuresMenu.current &&
       openFeatures &&
