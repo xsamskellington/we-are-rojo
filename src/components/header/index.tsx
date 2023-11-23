@@ -11,16 +11,22 @@ import Advertising from './sections/advertising';
 const Header = () => {
   return (
     <header className="header">
+      <a href={'/'} className="logo">
+        <Image src={Rojo} alt="logo" width={60} height={30} />
+      </a>
       <div className="sections">
-        <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={40} height={25} />
-        </a>
-        <Features />
-        <Episodic />
-        <Advertising />
         <div className="dropdown">
+          <Features />
+          |
+          <Episodic />
+          |
+          <Advertising />|
+          <Link href="/reel" className="icon">
+            REEL
+          </Link>
+          |
           <Link href="/about" className="icon">
-            About
+            ABOUT
           </Link>
         </div>
       </div>

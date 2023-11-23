@@ -15,7 +15,7 @@ export const socialMedia = [
 ];
 
 export const features = {
-  title: 'Features',
+  title: 'FEATURES',
   projects: [
     {
       title: 'Ecos de un Crimen',
@@ -49,7 +49,7 @@ export const features = {
 };
 
 export const episodic = {
-  title: 'Episodic',
+  title: 'EPISODIC',
   projects: [
     {
       title: 'Quien mató a Sara?',
@@ -67,23 +67,43 @@ export const episodic = {
 };
 
 export const advertising = {
-  title: 'Advertising',
+  title: 'ADVERTISING',
   projects: [
     {
-      title: 'Burger King',
-      href: '/advertising/burger-king',
+      brand: 'BURGER KING',
+      project: [
+        {
+          title: 'Confusing times',
+          href: '/advertising/burger-king/confusing-times',
+        },
+      ],
     },
     {
-      title: 'Corona - Sunbrew',
-      href: '/advertising/corona-sunbrew',
+      brand: 'CORONA',
+      project: [
+        {
+          title: 'Sunbrew',
+          href: '/advertising/corona/sunbrew',
+        },
+      ],
     },
     {
-      title: 'Samsung - Tech Goes Green',
-      href: '/advertising/samsung-tech-goes-green',
+      brand: 'SAMSUNG',
+      project: [
+        {
+          title: 'Tech Goes Green',
+          href: '/advertising/samsung/tech-goes-green',
+        },
+      ],
     },
     {
-      title: 'Swarovski - Metamorphosis',
-      href: '/advertising/swarovski-metamorphosis',
+      brand: 'SWAROVSKI',
+      project: [
+        {
+          title: 'Metamorphosis',
+          href: '/advertising/swarovski/metamorphosis',
+        },
+      ],
     },
   ],
 };

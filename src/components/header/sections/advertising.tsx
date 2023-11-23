@@ -1,7 +1,7 @@
 'use client';
 import '../styles.css';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { advertising } from '../data';
 
 const Advertising = () => {
@@ -17,7 +17,9 @@ const Advertising = () => {
     }
   };
 
-  document.addEventListener('mousedown', closeAdvertising);
+  useEffect(() => {
+    document.addEventListener('mousedown', closeAdvertising);
+  });
 
   return (
     <div className="dropdown">
@@ -29,12 +31,20 @@ const Advertising = () => {
       </button>
       {openAdvertising && (
         <div ref={advertisingMenu} className="dropdown-menu">
-          {advertising.projects.map((project) => (
-            <Link href={project.href} key={project.title}>
-              <p onClick={() => setOpenAdvertising(false)} className="options">
-                {project.title}
-              </p>
-            </Link>
+          {advertising.projects.map((brand) => (
+            <>
+              <p className="brand">{brand.brand}</p>
+              {brand.project.map((project) => (
+                <Link href={project.href} key={project.title}>
+                  <p
+                    onClick={() => setOpenAdvertising(false)}
+                    className="brand-options"
+                  >
+                    {project.title}
+                  </p>
+                </Link>
+              ))}
+            </>
           ))}
         </div>
       )}

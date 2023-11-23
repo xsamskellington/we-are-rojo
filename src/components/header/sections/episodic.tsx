@@ -1,7 +1,7 @@
 'use client';
 import '../styles.css';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { episodic } from '../data';
 
 const Episodic = () => {
@@ -18,7 +18,9 @@ const Episodic = () => {
     }
   };
 
-  document.addEventListener('mousedown', closeEpisodic);
+  useEffect(() => {
+    document.addEventListener('mousedown', closeEpisodic);
+  });
 
   return (
     <div className="dropdown">
