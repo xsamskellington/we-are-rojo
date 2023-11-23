@@ -1,0 +1,12 @@
+{
+  "builds": [{ "src": "next.config.js", "use": "@vercel/next" }],
+  "public": "./public",
+  "functions": "./api",
+  "env": {
+    "EXAMPLE": "value"
+  },
+  "lfs": {
+    "version": "2.12.0",
+    "assets": ["public/videos/**/*"]
+  }
+}
