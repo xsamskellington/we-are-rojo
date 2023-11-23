@@ -1,7 +1,7 @@
 'use client';
 import '../styles.css';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { features } from '../data';
 
 const Features = () => {
@@ -18,7 +18,9 @@ const Features = () => {
     }
   };
 
-  document.addEventListener('mousedown', closeFeaturesMenus);
+  useEffect(() => {
+    document.addEventListener('mousedown', closeFeaturesMenus);
+  });
 
   return (
     <div className="dropdown">

@@ -1,7 +1,7 @@
 'use client';
 import '../styles.css';
 import Link from 'next/link';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { advertising } from '../data';
 
 const Advertising = () => {
@@ -17,7 +17,9 @@ const Advertising = () => {
     }
   };
 
-  document.addEventListener('mousedown', closeAdvertising);
+  useEffect(() => {
+    document.addEventListener('mousedown', closeAdvertising);
+  });
 
   return (
     <div className="dropdown">
