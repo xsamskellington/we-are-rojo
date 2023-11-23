@@ -1,4 +1,4 @@
-import '../../pagesStyles.css';
+import '../../../pagesStyles.css';
 import VideoPlayer from '@/components/videoPlayer';
 
 const Page = () => {

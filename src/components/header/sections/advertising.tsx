@@ -29,12 +29,20 @@ const Advertising = () => {
       </button>
       {openAdvertising && (
         <div ref={advertisingMenu} className="dropdown-menu">
-          {advertising.projects.map((project) => (
-            <Link href={project.href} key={project.title}>
-              <p onClick={() => setOpenAdvertising(false)} className="options">
-                {project.title}
-              </p>
-            </Link>
+          {advertising.projects.map((brand) => (
+            <>
+              <p className="brand">{brand.brand}</p>
+              {brand.project.map((project) => (
+                <Link href={project.href} key={project.title}>
+                  <p
+                    onClick={() => setOpenAdvertising(false)}
+                    className="brand-options"
+                  >
+                    {project.title}
+                  </p>
+                </Link>
+              ))}
+            </>
           ))}
         </div>
       )}

@@ -70,21 +70,40 @@ export const advertising = {
   title: 'ADVERTISING',
   projects: [
     {
-      title: 'Burger King',
-      href: '/advertising/burger-king',
+      brand: 'BURGER KING',
+      project: [
+        {
+          title: 'Confusing times',
+          href: '/advertising/burger-king/confusing-times',
+        },
+      ],
     },
     {
-      title: 'Corona - Sunbrew',
-      href: '/advertising/corona-sunbrew',
-      multiproject: true,
+      brand: 'CORONA',
+      project: [
+        {
+          title: 'Sunbrew',
+          href: '/advertising/corona/sunbrew',
+        },
+      ],
     },
     {
-      title: 'Samsung - Tech Goes Green',
-      href: '/advertising/samsung-tech-goes-green',
+      brand: 'SAMSUNG',
+      project: [
+        {
+          title: 'Tech Goes Green',
+          href: '/advertising/samsung/tech-goes-green',
+        },
+      ],
     },
     {
-      title: 'Swarovski - Metamorphosis',
-      href: '/advertising/swarovski-metamorphosis',
+      brand: 'SWAROVSKI',
+      project: [
+        {
+          title: 'Metamorphosis',
+          href: '/advertising/swarovski/metamorphosis',
+        },
+      ],
     },
   ],
 };
