@@ -15,7 +15,7 @@ export const socialMedia = [
 ];
 
 export const features = {
-  title: 'Features',
+  title: 'FEATURES',
   projects: [
     {
       title: 'Ecos de un Crimen',
@@ -49,7 +49,7 @@ export const features = {
 };
 
 export const episodic = {
-  title: 'Episodic',
+  title: 'EPISODIC',
   projects: [
     {
       title: 'Quien mató a Sara?',
@@ -67,7 +67,7 @@ export const episodic = {
 };
 
 export const advertising = {
-  title: 'Advertising',
+  title: 'ADVERTISING',
   projects: [
     {
       title: 'Burger King',
@@ -76,6 +76,7 @@ export const advertising = {
     {
       title: 'Corona - Sunbrew',
       href: '/advertising/corona-sunbrew',
+      multiproject: true,
     },
     {
       title: 'Samsung - Tech Goes Green',
