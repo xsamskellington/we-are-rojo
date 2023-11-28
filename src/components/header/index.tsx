@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import './styles.css';
+import './styles.mobile.css';
 import { socialMedia } from './data';
 import Rojo from '../images/rojo.svg';
 import Link from 'next/link';

@@ -13,3 +13,21 @@
   top: 0;
   left: 0;
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .video-container {
+    border: 1px solid red;
+    width: 99vw;
+    height: 50vh;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .video-container {
+    border: 1px solid yellow;
+    width: 99vw;
+    height: 70vh;
+  }
+}
