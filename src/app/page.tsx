@@ -4,48 +4,14 @@ const Home = () => {
   return (
     <>
       <div className="video-container">
-        <video
-          className="video"
-          controlsList="nodownload"
-          autoPlay
-          loop
-          // poster={image}
-        >
+        <video className="video" controlsList="nodownload" autoPlay loop muted>
           <source src={'/rojoReel.mp4'} type="video/mp4" />
           Tu navegador no soporta el tag de video.
         </video>
       </div>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        temporibus vero sit. Porro perferendis nesciunt labore, alias, voluptate
-        placeat ipsam reprehenderit soluta dolore minima natus voluptas,
-        pariatur aspernatur temporibus? Alias.Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Nesciunt temporibus vero sit. Porro
-        perferendis nesciunt labore, alias, voluptate placeat ipsam
-        reprehenderit soluta dolore minima natus voluptas, pariatur aspernatur
-        temporibus? Alias.Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Nesciunt temporibus vero sit. Porro perferendis nesciunt labore,
-        alias, voluptate placeat ipsam reprehenderit soluta dolore minima natus
-        voluptas, pariatur aspernatur temporibus? Alias.Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Nesciunt temporibus vero sit. Porro
-        perferendis nesciunt labore, alias, voluptate placeat ipsam
-        reprehenderit soluta dolore minima natus voluptas, pariatur aspernatur
-        temporibus? Alias.Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Nesciunt temporibus vero sit. Porro perferendis nesciunt labore,
-        alias, voluptate placeat ipsam reprehenderit soluta dolore minima natus
-        voluptas, pariatur aspernatur temporibus? Alias.Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Nesciunt temporibus vero sit. Porro
-        perferendis nesciunt labore, alias, voluptate placeat ipsam
-        reprehenderit soluta dolore minima natus voluptas, pariatur aspernatur
-        temporibus? Alias.Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Nesciunt temporibus vero sit. Porro perferendis nesciunt labore,
-        alias, voluptate placeat ipsam reprehenderit soluta dolore minima natus
-        voluptas, pariatur aspernatur temporibus? Alias.Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Nesciunt temporibus vero sit. Porro
-        perferendis nesciunt labore, alias, voluptate placeat ipsam
-        reprehenderit soluta dolore minima natus voluptas, pariatur aspernatur
-        temporibus? Alias.
-      </h1>
+      <div className="home-content">
+        <h1>Visual Effects</h1>
+      </div>
     </>
   );
 };

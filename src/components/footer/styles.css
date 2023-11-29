@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid white;
+  margin: 0 60px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.legal {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  cursor: pointer;
+  height: 50px;
+  padding: 0 9px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.social-icon:hover {
+  background-color: rgba(70, 70, 70, 0.8);
+}

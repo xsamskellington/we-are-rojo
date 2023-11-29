@@ -12,44 +12,13 @@
   align-items: center;
 }
 
-.dropdown {
+.section-menu {
   display: flex;
   align-items: center;
-  position: relative;
-}
-
-.dropdown-menu {
-  position: absolute;
-  padding: 0.5em;
-  background-color: rgba(70, 70, 70, 0.8);
-  top: 50px;
-  border-bottom-left-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
-  z-index: 1;
-}
-
-.dropdown > .icon:focus + .dropdown-menu {
-  transform: translateY(0);
-  z-index: 1;
-}
-
-.options {
-  padding: 0.5em;
-  background-color: transparent;
-  width: max-content;
-  color: white;
-  text-decoration: none;
-  z-index: 1;
 }
 
 a:-webkit-any-link {
   text-decoration: none;
-}
-
-.options:hover {
-  font-weight: 500;
 }
 
 .logo {
@@ -61,7 +30,7 @@ a:-webkit-any-link {
   align-items: center;
 }
 
-.icon {
+.section {
   cursor: pointer;
   height: 50px;
   padding: 0 9px;
@@ -74,33 +43,6 @@ a:-webkit-any-link {
   font-family: inherit;
 }
 
-.dropdown > .icon:focus,
-.icon:hover {
-  background-color: rgba(70, 70, 70, 0.5);
-  font-weight: 500;
-}
-
-.brand {
-  padding: 0.5em;
-  background-color: transparent;
-  width: max-content;
-  color: white;
-  text-decoration: none;
-  z-index: 1;
-}
-
-.brand-options {
-  padding: 0.5em;
-  padding-bottom: 20px;
-  padding-top: 0;
-  padding-left: 30px;
-  background-color: transparent;
-  width: max-content;
-  color: white;
-  text-decoration: none;
-  z-index: 1;
-}
-
-.brand-options:hover {
-  font-weight: 500;
+.section:hover {
+  font-weight: 700;
 }
