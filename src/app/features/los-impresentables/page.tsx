@@ -11,7 +11,7 @@ const Page = () => {
         <div className="info-container">
           <h1 className="title">Los Impresentables</h1>
           <div className="credits">
-            <div>
+            <div className="vfx-credits">
               <p className="text">
                 <span>VFX Sup:</span> Jonathan Monroig{' '}
               </p>
