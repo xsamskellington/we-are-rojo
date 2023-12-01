@@ -1,11 +1,13 @@
+import VimeoPlayer from '@/components/vimeoPlayer';
 import '../../pagesStyles.css';
-import VideoPlayer from '@/components/videoPlayer';
 
 const Page = () => {
   return (
     <>
       <div className="page-container">
-        <VideoPlayer src={'/features/30NochesConMiEx.mp4'} image={''} />
+        <VimeoPlayer
+          src={'https://player.vimeo.com/video/882116274?h=9e34677e5f'}
+        />
         <div className="info-container">
           <h1 className="title">30 Noches con mi Ex</h1>
           <div className="credits">

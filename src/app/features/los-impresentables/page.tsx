@@ -1,11 +1,13 @@
+import VimeoPlayer from '@/components/vimeoPlayer';
 import '../../pagesStyles.css';
-import VideoPlayer from '@/components/videoPlayer';
 
 const Page = () => {
   return (
     <>
       <div className="page-container">
-        <VideoPlayer src={'/features/LosImpresentables.mp4'} image={''} />
+        <VimeoPlayer
+          src={'https://player.vimeo.com/video/881823400?h=4a14d88430'}
+        />
         <div className="info-container">
           <h1 className="title">Los Impresentables</h1>
           <div className="credits">

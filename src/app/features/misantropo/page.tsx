@@ -1,3 +1,4 @@
+import VimeoPlayer from '@/components/vimeoPlayer';
 import '../../pagesStyles.css';
 import VideoPlayer from '@/components/videoPlayer';
 
@@ -5,7 +6,7 @@ const Page = () => {
   return (
     <>
       <div className="page-container">
-        <VideoPlayer src={'/features/misantropo.mp4'} image={''} />
+        {/* <VimeoPlayer src={null} /> */}
         <div className="info-container">
           <h1 className="title">Misántropo</h1>
           <div className="credits">
