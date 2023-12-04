@@ -1,3 +1,4 @@
+import MainProjectsHome from '@/components/mainProjectsHome';
 import './styles.css';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       </div>
       <div className="home-content">
         <h1>Visual Effects</h1>
+        <MainProjectsHome />
       </div>
     </>
   );
