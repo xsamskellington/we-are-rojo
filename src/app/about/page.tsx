@@ -17,10 +17,6 @@ const Page = () => {
 
       <div className="social-text">
         <div>
-          <p>Argentina</p>
-          <p>Buenos Aires</p>
-        </div>
-        <div>
           <p>Contacto</p>
           <a href="mailto:contact@wearerojo.com" target="_blank">
             contact@wearerojo.com

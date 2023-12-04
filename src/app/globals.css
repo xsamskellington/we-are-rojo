@@ -4,3 +4,7 @@
   background-color: black;
   color: white;
 }
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
