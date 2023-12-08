@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 5px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .thumbnail {
@@ -44,4 +46,18 @@
 
 p {
   background: transparent;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .thumbnail {
+    width: 100%;
+    height: 600px;
+  }
+}
+@media (max-width: 700px) {
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+  }
 }
