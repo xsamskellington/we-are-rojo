@@ -1,30 +1,36 @@
 'use client';
 import Image from 'next/image';
+
 import './styles.css';
-import './styles.mobile.css';
-import { menuSections } from './data';
 import Rojo from '../images/rojo.svg';
-import Link from 'next/link';
+import DesktopHeader from './desktopHeader';
+import MobileHeader from './mobileHeader';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [deviceMobile, setDeviceMobile] = useState(false);
+
+  useEffect(() => {
+    const isMobile =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 1120px)').matches;
+
+    if (isMobile) {
+      setDeviceMobile(true);
+    }
+  }, []);
+
   return (
-    <header className="header">
-      <div className="sections">
-        <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={70} height={40} />
-        </a>
-        <div className="section-menu">
-          {menuSections.map((section, index) => (
-            <>
-              <Link href={section.href} className="section" key={section.title}>
-                {section.title}
-              </Link>
-              {index < menuSections.length - 1 && '|'}
-            </>
-          ))}
+    <>
+      <header className="header">
+        <div className="sections">
+          <a href={'/'} className="logo">
+            <Image src={Rojo} alt="logo" width={70} height={40} />
+          </a>
+          {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 
