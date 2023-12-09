@@ -19,11 +19,11 @@ const Page = () => {
         <div>
           <p>Contacto</p>
           <a href="mailto:contact@wearerojo.com" target="_blank">
-            contact@wearerojo.com
+            <p className="social-media">contact@wearerojo.com</p>
           </a>
         </div>
         <div>
-          <p>
+          <p className="social-media">
             <a
               href="https://www.linkedin.com/company/wearerojo/"
               target="_blank"
@@ -31,7 +31,7 @@ const Page = () => {
               Linkedin
             </a>
           </p>
-          <p>
+          <p className="social-media">
             <a
               href="https://www.instagram.com/wearerojostudio/"
               target="_blank"

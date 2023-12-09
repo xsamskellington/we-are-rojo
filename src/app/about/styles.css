@@ -49,11 +49,23 @@
   .social-text > div {
     margin-bottom: 20px;
   }
+
+  .social-media {
+    text-decoration: underline;
+    margin-top: 10px;
+    text-underline-offset: 5px;
+  }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .about-container {
     width: 90vw;
+  }
+
+  .social-media {
+    text-decoration: underline;
+    margin-top: 10px;
+    text-underline-offset: 5px;
   }
 }
