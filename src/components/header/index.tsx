@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+
 import './styles.css';
 import Rojo from '../images/rojo.svg';
 import DesktopHeader from './desktopHeader';
@@ -8,9 +9,12 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
-  const isMobile = window.matchMedia('(max-width: 1120px)').matches;
 
   useEffect(() => {
+    const isMobile =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 1120px)').matches;
+
     if (isMobile) {
       setDeviceMobile(true);
     }
