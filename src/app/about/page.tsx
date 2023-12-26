@@ -4,14 +4,12 @@ const Page = () => {
     <div className="about-container">
       <div className="about-text">
         <p>
-          Somos un estudio especializado en efectos visuales, servicios de
-          postproducción y Color Grading para publicidad, series de TV y
-          películas.
+          We are a Studio specialized in Visual Effects, Post-production
+          services & Color Grading for advertising,TV series and films.
         </p>
         <p>
-          Nuestras producciones están realizadas por un excelente equipo de
-          efectos visuales, el departamento editorial y artistas y asistentes de
-          gradación de color.
+          Our productions are made by an accomplished VFX Team,the editorial
+          department & Color Grading artists and assistants.
         </p>
       </div>
 

@@ -6,12 +6,12 @@ const Home = () => {
     <>
       <div className="video-container">
         <video className="video" controlsList="nodownload" autoPlay loop muted>
-          <source src={'/rojoReel.mp4'} type="video/mp4" />
+          <source src={'/rojoHome.mp4'} type="video/mp4" />
           Tu navegador no soporta el tag de video.
         </video>
       </div>
       <div className="home-content">
-        <h1>Visual Effects</h1>
+        <h1>We construct Visual Effects. We are Rojo Studio</h1>
         <MainProjectsHome />
       </div>
     </>

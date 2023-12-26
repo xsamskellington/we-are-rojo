@@ -1,11 +1,13 @@
 import '../pagesStyles.css';
-import VideoPlayer from '@/components/videoPlayer';
+import VimeoPlayer from '@/components/vimeoPlayer';
 
 const Page = () => {
   return (
     <>
       <div className="page-container">
-        <VideoPlayer src={'/rojoReel.mp4'} image={''} />
+        <VimeoPlayer
+          src={'https://player.vimeo.com/video/896918155?h=7ddbaafca7'}
+        />
         <div className="info-container">
           <h1 className="title">Reel 2023</h1>
         </div>

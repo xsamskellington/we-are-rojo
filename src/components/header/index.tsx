@@ -21,16 +21,14 @@ const Header = () => {
   }, []);
 
   return (
-    <>
-      <header className="header">
-        <div className="sections">
-          <a href={'/'} className="logo">
-            <Image src={Rojo} alt="logo" width={70} height={40} />
-          </a>
-          {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
-        </div>
-      </header>
-    </>
+    <header className="header">
+      <div className="sections">
+        <a href={'/'} className="logo">
+          <Image src={Rojo} alt="logo" width={90} height={60} />
+        </a>
+        {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
+      </div>
+    </header>
   );
 };
 

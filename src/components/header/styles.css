@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 70px;
   padding: 5px 15px;
 }
 
@@ -22,7 +22,7 @@
   height: 50px;
   padding-left: 10px;
   padding-right: 50px;
-  padding-top: 10px;
+
   display: flex;
   align-items: center;
 }
@@ -38,6 +38,10 @@
   border: none;
   font-size: large;
   font-family: inherit;
+}
+
+.section:focus {
+  font-weight: 700;
 }
 
 .section:hover {

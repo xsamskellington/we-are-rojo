@@ -5,9 +5,8 @@ const Page = () => {
   return (
     <div className="page-container">
       <VimeoPlayer
-        src={'https://player.vimeo.com/video/892006460?h=cafe2ac87f'}
+        src={'https://player.vimeo.com/video/896349740?h=9857f375da'}
       />
-
       <div className="info-container">
         <h1 className="title">El Método Tangalanga</h1>
         <div className="credits">
