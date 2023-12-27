@@ -15,9 +15,9 @@ export const thumbnailProjects = [
     href: '/episodic/division-palermo',
   },
   {
-    title: 'THE UNPRESENTABLES',
-    img: '/04_impre_home.png',
-    href: '/features/los-impresentables',
+    title: 'ADIOS, BUENOS AIRES',
+    img: '/04_chau_home.png',
+    href: '/features/adios-buenos-aires',
   },
   {
     title: 'THE TANGALANGA METHOD',
@@ -25,8 +25,8 @@ export const thumbnailProjects = [
     href: '/features/el-metodo-tangalanga',
   },
   {
-    title: 'ADIOS, BUENOS AIRES',
-    img: '/06_chau_home.png',
-    href: '/features/adios-buenos-aires',
+    title: 'THE UNPRESENTABLES',
+    img: '/06_impre_home.png',
+    href: '/features/los-impresentables',
   },
 ];
