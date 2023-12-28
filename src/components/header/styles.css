@@ -40,11 +40,11 @@
   font-family: inherit;
 }
 
-.section:focus {
+.section:hover {
   font-weight: 700;
 }
 
-.section:hover {
+.bold {
   font-weight: 700;
 }
 

@@ -1,0 +1,33 @@
+.page-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-info {
+  padding: 40px;
+  padding-left: 120px;
+  width: 950px;
+}
+
+.work {
+  padding-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .page-info {
+    width: auto;
+    padding: 30px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .page-info {
+    width: auto;
+    padding: 30px;
+  }
+}

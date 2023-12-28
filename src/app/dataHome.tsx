@@ -1,32 +1,32 @@
-export const thumbnailProjects = [
+export const projects = [
   {
     title: 'ECHOES OF A CRIME',
-    img: '/01_euc_home.png',
+    img: '/01-ecos-crimen.png',
     href: '/features/ecos-de-un-crimen',
   },
   {
     title: 'TO CATCH A KILLER',
-    img: '/02_misa_home.png',
+    img: '/02-misantropo.png',
     href: '/features/misantropo',
   },
   {
     title: 'COMMUNITY SQUAD',
-    img: '/03_dp_home.png',
+    img: '/03-division-palermo.png',
     href: '/episodic/division-palermo',
   },
   {
     title: 'ADIOS, BUENOS AIRES',
-    img: '/04_chau_home.png',
+    img: '/04-adios-buenos-aires.png',
     href: '/features/adios-buenos-aires',
   },
   {
     title: 'THE TANGALANGA METHOD',
-    img: '/05_tanga_home.png',
+    img: '/05-tangalanga.png',
     href: '/features/el-metodo-tangalanga',
   },
   {
     title: 'THE UNPRESENTABLES',
-    img: '/06_impre_home.png',
+    img: '/06-impresentables.png',
     href: '/features/los-impresentables',
   },
 ];

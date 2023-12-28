@@ -1,4 +1,5 @@
 import MainProjectsHome from '@/components/mainProjectsHome';
+import { projects } from './dataHome';
 import './styles.css';
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
       <div className="home-content">
         <h1 className="home-title">We construct Visual Effects. </h1>
         <h1 className="home-title"> We are Rojo Studio.</h1>
-        <MainProjectsHome />
+        <MainProjectsHome projects={projects} />
       </div>
     </>
   );

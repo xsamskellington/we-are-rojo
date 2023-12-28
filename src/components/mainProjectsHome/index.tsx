@@ -1,12 +1,10 @@
 import './styles.css';
-import Image from 'next/image';
-import { thumbnailProjects } from './data';
 import Link from 'next/link';
 
-const MainProjectsHome = () => {
+const MainProjectsHome = ({ projects }: any) => {
   return (
     <div className="thumbnail-container">
-      {thumbnailProjects.map((project) => (
+      {projects.map((project: any) => (
         <Link
           href={project.href}
           className="thumbnail"
