@@ -1,17 +1,17 @@
-export const episodic = {
-  title: 'EPISODIC',
-  projects: [
-    {
-      title: 'Quien mató a Sara?',
-      href: '/episodic/quien-mato-a-sara',
-    },
-    {
-      title: 'División Palermo',
-      href: '/episodic/division-palermo',
-    },
-    // {
-    //   title: 'CTRL + ALT DESIRE',
-    //   href: '/episodic/ctrl-alt-desire',
-    // },
-  ],
-};
+export const projects = [
+  {
+    title: 'WHO KILLED SARA?',
+    href: '/episodic/quien-mato-a-sara',
+    img: '/quien-mato-sara.png',
+  },
+  {
+    title: 'COMMUNITY SQUAD',
+    href: '/episodic/division-palermo',
+    img: '/division-palermo.png',
+  },
+  {
+    title: 'CTRL + ALT DESIRE',
+    href: '/episodic/ctrl-alt-desire',
+    img: '/ctrl-alt-desire.png',
+  },
+];

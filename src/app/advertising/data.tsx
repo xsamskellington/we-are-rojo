@@ -1,41 +1,22 @@
-export const advertising = {
-  title: 'ADVERTISING',
-  projects: [
-    {
-      brand: 'BURGER KING',
-      project: [
-        {
-          title: 'Confusing times',
-          href: '/advertising/burger-king/confusing-times',
-        },
-      ],
-    },
-    {
-      brand: 'CORONA',
-      project: [
-        {
-          title: 'Sunbrew',
-          href: '/advertising/corona/sunbrew',
-        },
-      ],
-    },
-    {
-      brand: 'SAMSUNG',
-      project: [
-        {
-          title: 'Tech Goes Green',
-          href: '/advertising/samsung/tech-goes-green',
-        },
-      ],
-    },
-    {
-      brand: 'SWAROVSKI',
-      project: [
-        {
-          title: 'Metamorphosis',
-          href: '/advertising/swarovski/metamorphosis',
-        },
-      ],
-    },
-  ],
-};
+export const projects = [
+  {
+    title: 'BURGER KING | CONFUSING TIMES',
+    href: '/advertising/burger-king/confusing-times',
+    img: '/bk-confusing-times.png',
+  },
+  {
+    title: 'CORONA | SUNBREW',
+    href: '/advertising/corona/sunbrew',
+    img: '/corona-sunbrew.png',
+  },
+  {
+    title: 'SAMGUNG | TECH GOES GREEN',
+    href: '/advertising/samsung/tech-goes-green',
+    img: '/samsung-tech-goes-green.png',
+  },
+  {
+    title: 'SWAROVSKI | METAMORPHOSIS',
+    href: '/advertising/swarovski/metamorphosis',
+    img: '/swarovsky-metamorphosis.png',
+  },
+];
