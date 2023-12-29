@@ -12,7 +12,7 @@ const Home = () => {
         </video>
       </div>
       <div className="home-content">
-        <h1 className="home-title">We construct Visual Effects. </h1>
+        <h1>We construct Visual Effects. </h1>
         <h1 className="home-title"> We are Rojo Studio.</h1>
         <MainProjectsHome projects={projects} />
       </div>

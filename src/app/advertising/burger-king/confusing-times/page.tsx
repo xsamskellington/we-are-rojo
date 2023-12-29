@@ -9,7 +9,7 @@ const Page = () => {
       />
 
       <div className="info-container">
-        <h1 className="title">Burger King | Confusing times</h1>
+        <h1 className="title">BURGER KING | CONFUSING TIMES</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

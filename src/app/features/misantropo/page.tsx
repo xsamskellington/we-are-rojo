@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/891897293?h=53015a9e9f'}
       />
       <div className="info-container">
-        <h1 className="title">Misántropo</h1>
+        <h1 className="title">TO CATCH A KILLER</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/891895772?h=9cbcea3883'}
       />
       <div className="info-container">
-        <h1 className="title">División Palermo</h1>
+        <h1 className="title">COMMUNITY SQUAD</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

@@ -8,7 +8,7 @@ const Page = () => {
     <div className="page-container">
       <PageSectionVideo
         src={
-          'https://player.vimeo.com/video/891897293?h=53015a9e9f&autoplay=1&muted=1'
+          'https://player.vimeo.com/video/891897293?h=53015a9e9f&autoplay=1&muted=1&loop=1'
         }
       />
       <div className="page-info">

@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/896349740?h=9857f375da'}
       />
       <div className="info-container">
-        <h1 className="title">El Método Tangalanga</h1>
+        <h1 className="title">THE TANGALANGA METHOD</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

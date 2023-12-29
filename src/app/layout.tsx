@@ -10,7 +10,7 @@ const roboto = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ROJO studio',
+  title: 'ROJO Studio',
 };
 
 export default function RootLayout({

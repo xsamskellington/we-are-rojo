@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/891896887?h=eede2924eb'}
       />
       <div className="info-container">
-        <h1 className="title">Los Impresentables</h1>
+        <h1 className="title">THE UNPRESENTABLES</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

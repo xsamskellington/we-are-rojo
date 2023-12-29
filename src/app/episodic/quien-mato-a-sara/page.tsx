@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/891897620?h=217c9dea51'}
       />
       <div className="info-container">
-        <h1 className="title">¿Quién mató a Sara?</h1>
+        <h1 className="title">WHO KILLED SARA?</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

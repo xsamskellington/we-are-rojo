@@ -2,6 +2,7 @@
   width: 99vw;
   height: 99vh;
   overflow: hidden;
+  margin-top: 30px;
 }
 
 .video {

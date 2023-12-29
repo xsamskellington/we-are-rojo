@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/882109093?h=fd77ef6d6f'}
       />
       <div className="info-container">
-        <h1 className="title">Corona | Sunbrew</h1>
+        <h1 className="title">CORONA | SUNBREW</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

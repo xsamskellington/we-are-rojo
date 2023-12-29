@@ -8,7 +8,7 @@ const Page = () => {
         src={'https://player.vimeo.com/video/891895523?h=090bb41e6a'}
       />
       <div className="info-container">
-        <h1 className="title">Adiós, Buenos Aires</h1>
+        <h1 className="title">ADIOS, BUENOS AIRES</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

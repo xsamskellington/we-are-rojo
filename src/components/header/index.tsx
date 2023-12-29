@@ -24,7 +24,7 @@ const Header = () => {
     <header className="header">
       <div className="sections">
         <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={90} height={60} />
+          <Image src={Rojo} alt="logo" width={120} height={90} />
         </a>
         {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
