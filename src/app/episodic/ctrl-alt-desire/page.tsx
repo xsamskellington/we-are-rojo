@@ -9,7 +9,7 @@ const Page = () => {
       />
 
       <div className="info-container">
-        <h1 className="title">Ctrl + Alt Desire</h1>
+        <h1 className="title">Ctrl + Alt + Desire</h1>
         <div className="credits">
           <div className="vfx-credits">
             <p className="text">

@@ -5,9 +5,9 @@ export const projects = [
     img: '/01-ecos-crimen.png',
   },
   {
-    title: '30 NIGHTS WITH MY EX',
-    href: '/features/30-noches-con-mi-ex',
-    img: '/30-noches-ex.png',
+    title: 'TO CATCH A KILLER',
+    href: '/features/misantropo',
+    img: '/02-misantropo.png',
   },
   {
     title: 'ADIOS, BUENOS AIRES',
@@ -25,13 +25,13 @@ export const projects = [
     img: '/05-tangalanga.png',
   },
   {
-    title: 'TO CATCH A KILLER',
-    href: '/features/misantropo',
-    img: '/02-misantropo.png',
+    title: '30 NIGHTS WITH MY EX',
+    href: '/features/30-noches-con-mi-ex',
+    img: '/30-noches-ex.png',
   },
   // {
   //   title: 'Jaque Mate',
   //   href: '/features/jaque-mate',
-  //   img: '/jaque-mate.png';
+  //   img: '/jaque-mate.png',
   // },
 ];
