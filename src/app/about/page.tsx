@@ -1,4 +1,5 @@
 import './styles.css';
+
 const Page = () => {
   return (
     <div className="about-container">

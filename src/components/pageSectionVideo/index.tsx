@@ -7,14 +7,10 @@ export interface PageSectionVideoProps {
 const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
   return (
     <div className="video-container">
-      <iframe
-        className="video"
-        title="vimeo-player"
-        src={src}
-        frameBorder="0"
-        allowFullScreen
-        allow="autoplay; fullscreen"
-      ></iframe>
+      <video className="video" controlsList="nodownload" autoPlay loop muted>
+        <source src={src} type="video/mp4" />
+        Tu navegador no soporta el tag de video.
+      </video>
     </div>
   );
 };

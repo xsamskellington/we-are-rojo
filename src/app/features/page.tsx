@@ -1,16 +1,12 @@
 import PageSectionVideo from '@/components/pageSectionVideo';
 import { projects } from './data';
-import './styles.css';
+import '../pageSectionHome.css';
 import MainProjectsHome from '@/components/mainProjectsHome';
 
 const Page = () => {
   return (
     <div className="page-container">
-      <PageSectionVideo
-        src={
-          'https://player.vimeo.com/video/900204385?h=7b4c24ddbc&autoplay=1&muted=1&loop=1&background=1'
-        }
-      />
+      <PageSectionVideo src={'/features-home.mp4'} />
 
       <div className="page-info">
         <h1>FEATURES</h1>
