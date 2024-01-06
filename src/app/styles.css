@@ -27,15 +27,6 @@
 
 /* Mobile */
 @media (max-width: 700px) {
-  .video-container {
-    width: 99vw;
-    height: 35vh;
-  }
-
-  .video {
-    object-fit: contain;
-  }
-
   .home-title {
     padding: 10px;
   }
