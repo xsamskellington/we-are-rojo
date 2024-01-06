@@ -13,7 +13,6 @@ const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
         autoPlay
         loop
         muted
-        playsInline={true}
       >
         <source src={src} type="video/mp4" />
         Tu navegador no soporta el tag de video.
