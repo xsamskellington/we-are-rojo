@@ -8,8 +8,10 @@ const Home = () => {
     <>
       <PageSectionVideo src={'/rojoHome.mp4'} />
       <div className="home-content">
-        <h1>We construct Visual Effects. </h1>
-        <h1 className="home-title"> We are Rojo Studio.</h1>
+        <div className="home-title">
+          <h1>We construct Visual Effects. </h1>
+          <h1> We are Rojo Studio.</h1>
+        </div>
         <MainProjectsHome projects={projects} />
       </div>
     </>

@@ -16,6 +16,7 @@
   .page-info {
     width: auto;
     padding: 30px;
+    padding-top: 0;
   }
 
   .work {

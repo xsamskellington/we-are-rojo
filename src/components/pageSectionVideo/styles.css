@@ -20,8 +20,16 @@
     width: 99vw;
     height: 70vh;
   }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .video-container {
+    height: 35vh;
+  }
 
   .video {
-    height: 78%;
+    object-fit: contain;
+    height: fit-content;
   }
 }
