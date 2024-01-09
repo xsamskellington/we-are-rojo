@@ -1,41 +1,32 @@
 'use client';
 import Image from 'next/image';
+
 import './styles.css';
-import { socialMedia } from './data';
 import Rojo from '../images/rojo.svg';
-import Link from 'next/link';
-import Features from './sections/features';
-import Episodic from './sections/episodic';
-import Advertising from './sections/advertising';
+import DesktopHeader from './desktopHeader';
+import MobileHeader from './mobileHeader';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [deviceMobile, setDeviceMobile] = useState(false);
+
+  useEffect(() => {
+    const isMobile =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 1120px)').matches;
+
+    if (isMobile) {
+      setDeviceMobile(true);
+    }
+  }, []);
+
   return (
     <header className="header">
       <div className="sections">
         <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={40} height={25} />
+          <Image src={Rojo} alt="logo" width={120} height={90} />
         </a>
-        <Features />
-        <Episodic />
-        <Advertising />
-        <div className="dropdown">
-          <Link href="/about" className="icon">
-            About
-          </Link>
-        </div>
-      </div>
-
-      <div className="sections">
-        {socialMedia.map((social) => (
-          <a
-            href={social.href}
-            target="_blank"
-            className="icon"
-            key={social.title}
-          >
-            <Image src={social.svg} alt="logo" width={25} height={25} />
-          </a>
-        ))}
+        {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </header>
   );

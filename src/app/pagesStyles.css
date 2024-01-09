@@ -24,13 +24,52 @@
   padding-left: 0;
   display: flex;
   justify-content: flex-start;
-  gap: 50px;
 }
 
 .text {
   margin-bottom: 10px;
 }
 
+.vfx-credits {
+  margin-right: 30px;
+}
+
 span {
   font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .title {
+    width: fit-content;
+  }
+  .info-container {
+    align-self: center;
+    padding: 20px;
+  }
+
+  .credits {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vfx-credits {
+    padding-bottom: 20px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .info-container {
+    align-self: center;
+  }
+
+  .credits {
+    display: block;
+  }
+
+  .vfx-credits {
+    padding-bottom: 20px;
+  }
 }
