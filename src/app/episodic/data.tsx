@@ -7,7 +7,7 @@ export const projects = [
   {
     title: 'COMMUNITY SQUAD',
     href: '/episodic/division-palermo',
-    img: '/division-palermo.png',
+    img: '/03-division-palermo.jpg',
   },
   {
     title: 'CTRL + ALT DESIRE',
