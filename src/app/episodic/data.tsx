@@ -2,16 +2,16 @@ export const projects = [
   {
     title: 'WHO KILLED SARA?',
     href: '/episodic/quien-mato-a-sara',
-    img: '/quien-mato-sara.png',
+    img: '/quien-mato-sara.jpg',
   },
   {
     title: 'COMMUNITY SQUAD',
     href: '/episodic/division-palermo',
-    img: '/division-palermo.png',
+    img: '/division-palermo.jpg',
   },
   {
     title: 'CTRL + ALT DESIRE',
     href: '/episodic/ctrl-alt-desire',
-    img: '/ctrl-alt-desire.png',
+    img: '/ctrl-alt-desire.jpg',
   },
 ];
