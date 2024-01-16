@@ -6,17 +6,13 @@ export interface PageSectionVideoProps {
 
 const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
   return (
-    <div className="video-container">
-      <video
-        className="video"
-        controlsList="nodownload"
-        autoPlay
-        loop
-        muted
-      >
-        <source src={src} type="video/mp4" />
-        Tu navegador no soporta el tag de video.
-      </video>
+    <div className="video-page-container">
+      <div className="video-container">
+        <video className="video" controlsList="nodownload" autoPlay loop muted>
+          <source src={src} type="video/mp4" />
+          Tu navegador no soporta el tag de video.
+        </video>
+      </div>
     </div>
   );
 };
