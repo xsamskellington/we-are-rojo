@@ -4,7 +4,7 @@ import MainProjectsHome from '@/components/mainProjectsHome';
 
 const Page = () => {
   return (
-    <div className="page-container">
+    <div>
       <PageSectionVideo src={'/episodic-home.mp4'} />
       <MainProjectsHome
         title={'EPISODIC'}
