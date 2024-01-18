@@ -41,6 +41,11 @@ const MobileHeader = () => {
       </button>
       {isOpen && (
         <div className="mobile-menu-container" ref={mobileMenuRef}>
+          <Link href={'/'} className="mobile-sections">
+            <p className="options" onClick={() => setIsOpen(false)}>
+              HOME
+            </p>
+          </Link>
           {menuSections.map((section, index) => (
             <Link
               href={section.href}

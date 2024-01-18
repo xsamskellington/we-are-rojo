@@ -2,12 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 90px;
-}
-
-.home-title {
-  text-align: center;
-  margin-bottom: 90px;
 }
 
 /* Mobile */

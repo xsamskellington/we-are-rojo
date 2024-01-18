@@ -1,8 +1,5 @@
 'use client';
-import Image from 'next/image';
-
 import './styles.css';
-import Rojo from '../images/rojo.svg';
 import DesktopHeader from './desktopHeader';
 import MobileHeader from './mobileHeader';
 import { useEffect, useState } from 'react';
@@ -23,9 +20,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="sections">
-        <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={80} height={50} />
-        </a>
         {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </header>
