@@ -34,7 +34,6 @@ const Home = () => {
       ) : (
         <PageSectionVideo src={'/rojoHome.mp4'} />
       )}
-
       <MainProjectsHome
         projects={projects}
         title={'We construct Visual Effects.'}

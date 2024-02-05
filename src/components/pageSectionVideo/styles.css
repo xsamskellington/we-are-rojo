@@ -1,11 +1,9 @@
 .video-page-container {
-  padding-top: 45%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .video-section-container {
-  position: fixed;
-  width: 99vw;
-  height: 80vh;
   overflow: hidden;
   top: 0;
   left: 0;
@@ -17,7 +15,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  width: 100%;
 }
 
 /* Tablet and Smaller Desktop */
@@ -28,6 +25,7 @@
 
   .video-page-container {
     padding-top: 60px;
+    height: 0;
   }
 }
 
@@ -39,5 +37,6 @@
 
   .video-page-container {
     padding-top: 60px;
+    height: 0;
   }
 }
