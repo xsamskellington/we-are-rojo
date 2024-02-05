@@ -6,6 +6,20 @@ import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    setIsScrolled(scrollY > 100);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const isMobile =
@@ -18,7 +32,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="sections">
         {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
