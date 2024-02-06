@@ -3,18 +3,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  height: 65px;
+  width: 100%;
   padding: 5px 15px;
+  position: fixed;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: black !important;
 }
 
 .sections {
   display: flex;
   align-items: center;
+  background: none !important;
 }
 
 .section-menu-desktop {
   display: flex;
   align-items: center;
+  background: none !important;
+}
+
+.section-menu-desktop > a > img {
+  background: none !important;
 }
 
 .logo {
@@ -22,7 +37,7 @@
   height: 50px;
   padding-left: 10px;
   padding-right: 50px;
-
+  background: none !important;
   display: flex;
   align-items: center;
 }
@@ -50,22 +65,21 @@
 
 .mobile-menu-button {
   border: none;
-  position: relative;
   display: flex;
 }
 
 .mobile-menu-container {
   position: absolute;
   padding: 0.5em;
-  top: 90px;
+  top: 70px;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  width: 95vw;
-  right: 0;
+  width: 100vw;
+  left: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .mobile-sections {
@@ -78,6 +92,13 @@
     width: 100%;
     justify-content: space-between;
   }
+
+  .header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -85,5 +106,12 @@
   .sections {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
   }
 }

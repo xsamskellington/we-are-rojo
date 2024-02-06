@@ -1,18 +1,22 @@
 import PageSectionVideo from '@/components/pageSectionVideo';
 import { projects } from './data';
-import '../pageSectionHome.css';
 import MainProjectsHome from '@/components/mainProjectsHome';
 
 const Page = () => {
   return (
-    <div className="page-container">
-      <PageSectionVideo src={'/advertising-home.mp4'} />
-      <div className="page-info">
-        <h1>ADVERTISING</h1>
-        <h3> We create visual effects for advertising</h3>
-        <h2 className="work">WORKS</h2>
-      </div>
-      <MainProjectsHome projects={projects} />
+    <div>
+      <PageSectionVideo
+        src={
+          'https://player.vimeo.com/video/910121439?h=fb1711d84b&autoplay=1&loop=1&background=1'
+        }
+      />
+
+      <MainProjectsHome
+        title={'ADVERTISING'}
+        subtitle={'We create visual effects for advertising'}
+        projects={projects}
+        home={false}
+      />
     </div>
   );
 };

@@ -23,10 +23,10 @@ export const menuSections = [
     title: 'FEATURES',
     href: '/features',
   },
-  {
-    title: 'EPISODIC',
-    href: '/episodic',
-  },
+  // {
+  //   title: 'EPISODIC',
+  //   href: '/episodic',
+  // },
   {
     title: 'ADVERTISING',
     href: '/advertising',

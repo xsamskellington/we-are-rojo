@@ -1,14 +1,25 @@
 'use client';
-import Image from 'next/image';
-
 import './styles.css';
-import Rojo from '../images/rojo.svg';
 import DesktopHeader from './desktopHeader';
 import MobileHeader from './mobileHeader';
 import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    setIsScrolled(scrollY > 100);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const isMobile =
@@ -21,11 +32,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="sections">
-        <a href={'/'} className="logo">
-          <Image src={Rojo} alt="logo" width={120} height={90} />
-        </a>
         {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
       </div>
     </header>

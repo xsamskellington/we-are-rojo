@@ -24,4 +24,9 @@ export const projects = [
     href: '/advertising/burger-king/confusing-times',
     img: '/bk-confusing-times.jpg',
   },
+  {
+    title: 'NETFLIX | NORMA',
+    href: '/advertising/netflix/norma',
+    img: '/netflix-norma.jpg',
+  },
 ];

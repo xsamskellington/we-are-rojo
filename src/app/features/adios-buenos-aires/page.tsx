@@ -1,5 +1,6 @@
 import VimeoPlayer from '@/components/vimeoPlayer';
 import '../../pagesStyles.css';
+import BackArrow from '@/components/backArrow';
 
 const Page = () => {
   return (
@@ -35,6 +36,7 @@ const Page = () => {
             </p>
           </div>
         </div>
+        <BackArrow href={'/features'} />
       </div>
     </div>
   );
