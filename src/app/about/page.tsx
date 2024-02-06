@@ -1,7 +1,21 @@
+'use client';
 import Image from 'next/image';
 import './styles.css';
+import { useEffect, useState } from 'react';
 
 const Page = () => {
+  const [deviceMobile, setDeviceMobile] = useState(false);
+
+  useEffect(() => {
+    const isMobile =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(max-width: 1120px)').matches;
+
+    if (isMobile) {
+      setDeviceMobile(true);
+    }
+  }, []);
+
   return (
     <div>
       <div className="about-container">
@@ -42,7 +56,13 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <Image src="/studio.jpeg" alt="studio" width={700} height={400} />
+
+        <Image
+          src="/studio.jpeg"
+          alt="studio"
+          width={deviceMobile ? 400 : 700}
+          height={deviceMobile ? 300 : 400}
+        />
       </div>
     </div>
   );

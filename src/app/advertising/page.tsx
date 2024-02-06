@@ -5,7 +5,11 @@ import MainProjectsHome from '@/components/mainProjectsHome';
 const Page = () => {
   return (
     <div>
-      <PageSectionVideo src={'/advertising-home.mp4'} />
+      <PageSectionVideo
+        src={
+          'https://player.vimeo.com/video/910121439?h=fb1711d84b&autoplay=1&loop=1&background=1'
+        }
+      />
 
       <MainProjectsHome
         title={'ADVERTISING'}

@@ -25,14 +25,18 @@ const Home = () => {
       {deviceMobile ? (
         <>
           <VimeoPlayer
-            src={'https://player.vimeo.com/video/896918155?h=7ddbaafca7'}
+            src={'https://player.vimeo.com/video/910187264?h=2cd41c1f82'}
           />
           <div className="home-title">
             <h1>LATEST WORKS</h1>
           </div>
         </>
       ) : (
-        <PageSectionVideo src={'/rojoHome.mp4'} />
+        <PageSectionVideo
+          src={
+            'https://player.vimeo.com/video/910126063?h=fb1711d84b&autoplay=1&loop=1&background=1'
+          }
+        />
       )}
       <MainProjectsHome
         projects={projects}

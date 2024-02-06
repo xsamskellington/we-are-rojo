@@ -8,16 +8,14 @@ const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
   return (
     <div className="video-page-container">
       <div className="video-section-container">
-        <video
+        <iframe
           className="video-section"
-          controlsList="nodownload"
-          autoPlay
-          loop
-          muted
-        >
-          <source src={src} type="video/mp4" />
-          Tu navegador no soporta el tag de video.
-        </video>
+          src={src}
+          width="1920"
+          height="1080"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+        ></iframe>
       </div>
     </div>
   );
