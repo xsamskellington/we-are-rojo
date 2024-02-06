@@ -11,13 +11,13 @@ const Page = () => {
             className="video-section"
             src={'https://player.vimeo.com/video/910187264?h=2cd41c1f82'}
             width="1920"
-            height="950"
-            frameBorder="0"
+            height="920"
             allow="fullscreen"
+            loading="lazy"
           ></iframe>
         </div>
       </div>
-      <div className="info-container">
+      <div className="info-container-reel">
         <h1 className="title">Reel 2023</h1>
       </div>
     </div>

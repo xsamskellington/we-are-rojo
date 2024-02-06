@@ -34,7 +34,7 @@ const Home = () => {
       ) : (
         <PageSectionVideo
           src={
-            'https://player.vimeo.com/video/910126063?h=fb1711d84b&autoplay=1&loop=1&background=1'
+            'https://player.vimeo.com/video/910129040?badge=0&autoplay=1&loop=1&background=1'
           }
         />
       )}

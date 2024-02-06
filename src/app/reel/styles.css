@@ -1,8 +1,12 @@
 .video-page-container {
   width: 100vw;
-  height: 100vh;
+  height: 96vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+
+.info-container-reel {
+  margin-top: 20px;
 }
