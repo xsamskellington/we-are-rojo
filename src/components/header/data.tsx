@@ -36,3 +36,22 @@ export const menuSections = [
     href: '/about',
   },
 ];
+
+export const menuSectionsMobile = [
+  {
+    title: 'FEATURES',
+    href: '/features',
+  },
+  // {
+  //   title: 'EPISODIC',
+  //   href: '/episodic',
+  // },
+  {
+    title: 'ADVERTISING',
+    href: '/advertising',
+  },
+  {
+    title: 'ABOUT',
+    href: '/about',
+  },
+];

@@ -8,9 +8,10 @@
   position: relative;
 }
 
-/* .video-section {
-  background: url('../images/loading.svg') 0px 0px no-repeat;
-} */
+.video-section {
+  /* background: url('../images/loading.svg') 0px 0px no-repeat; */
+  border: 0px;
+}
 
 .arrow {
   position: absolute;

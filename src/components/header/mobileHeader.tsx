@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import MobileMenu from '../images/mobile-menu.svg';
 import Image from 'next/image';
-import { menuSections } from './data';
+import { menuSectionsMobile } from './data';
 import Link from 'next/link';
 
 const MobileHeader = () => {
@@ -46,7 +46,7 @@ const MobileHeader = () => {
               HOME
             </p>
           </Link>
-          {menuSections.map((section, index) => (
+          {menuSectionsMobile.map((section, index) => (
             <Link
               href={section.href}
               key={section.title}

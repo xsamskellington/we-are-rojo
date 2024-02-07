@@ -8,6 +8,8 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
         <div className="home-title">
           <h1>{title} </h1>
           <h1> {subtitle}</h1>
+          <br></br>
+          <h1> LATEST WORKS </h1>
         </div>
       ) : (
         <div className="page-info">

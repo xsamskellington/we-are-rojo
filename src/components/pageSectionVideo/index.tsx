@@ -38,8 +38,9 @@ const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
             className="video-section"
             loading="lazy"
             src={src}
-            width="1920"
-            height="1080"
+            width="2560"
+            height="1440"
+            frameBorder={0}
             allow="autoplay; fullscreen; picture-in-picture"
           ></iframe>
         </div>

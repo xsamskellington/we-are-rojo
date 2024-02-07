@@ -14,6 +14,7 @@ const Page = () => {
             height="920"
             allow="fullscreen"
             loading="lazy"
+            frameBorder={0}
           ></iframe>
         </div>
       </div>
