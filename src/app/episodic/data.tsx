@@ -10,7 +10,7 @@ export const projects = [
     img: '/03-division-palermo.jpg',
   },
   {
-    title: 'CTRL + ALT DESIRE',
+    title: 'CTRL + ALT + DESIRE',
     href: '/episodic/ctrl-alt-desire',
     img: '/ctrl-alt-desire.jpg',
   },

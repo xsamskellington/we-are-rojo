@@ -29,9 +29,9 @@ export const projects = [
     href: '/features/30-noches-con-mi-ex',
     img: '/30-noches-ex.jpg',
   },
-  // {
-  //   title: 'Jaque Mate',
-  //   href: '/features/jaque-mate',
-  //   img: '/jaque-mate.jpg',
-  // },
+  {
+    title: 'Jaque Mate',
+    href: '/features/jaque-mate',
+    img: '/jaque-mate.jpg',
+  },
 ];

@@ -39,6 +39,10 @@
     padding-top: 60px;
     height: 0;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 /* Mobile */
@@ -50,5 +54,9 @@
   .video-page-container {
     padding-top: 60px;
     height: 0;
+  }
+
+  .arrow {
+    display: none;
   }
 }
