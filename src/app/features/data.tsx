@@ -30,7 +30,7 @@ export const projects = [
     img: '/30-noches-ex.jpg',
   },
   {
-    title: 'Jaque Mate',
+    title: 'JAQUE MATE',
     href: '/features/jaque-mate',
     img: '/jaque-mate.jpg',
   },

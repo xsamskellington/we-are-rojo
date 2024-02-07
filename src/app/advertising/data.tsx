@@ -10,7 +10,7 @@ export const projects = [
     img: '/samsung-chip.jpg',
   },
   {
-    title: 'SAMGUNG | TECH GOES GREEN | ',
+    title: 'SAMGUNG | TECH GOES GREEN ',
     href: '/advertising/samsung/out-of-the-box',
     img: '/samsung-box.jpg',
   },
@@ -25,7 +25,7 @@ export const projects = [
     img: '/bk-confusing-times.jpg',
   },
   {
-    title: 'NETFLIX | NORMA',
+    title: 'NETFLIX | ABRAZA TODO LO QUE ERES',
     href: '/advertising/netflix/norma',
     img: '/netflix-norma.jpg',
   },
