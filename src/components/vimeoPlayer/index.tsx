@@ -12,6 +12,7 @@ const vimeoPlayer = ({ src }: VimeoPlayerProps) => {
         src={src}
         frameBorder="0"
         allowFullScreen
+        loading="lazy"
       ></iframe>
     </div>
   );

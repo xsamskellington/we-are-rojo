@@ -11,19 +11,25 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.span {
+  margin-top: 20px;
 }
 
 .about-text > p {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-text {
-  /* margin-left: 80px; */
-  /* padding: 10px; */
   display: flex;
   /* flex-direction: column; */
   padding-right: 50px;
   justify-content: space-between;
+  align-items: end;
   height: 7em;
 }
 
