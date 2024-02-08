@@ -18,9 +18,7 @@ const Page = () => {
           ></iframe>
         </div>
       </div>
-      <div className="info-container-reel">
-        <h1 className="title">Reel 2023</h1>
-      </div>
+      <h1 className="title">Reel 2023</h1>
     </div>
   );
 };

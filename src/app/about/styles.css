@@ -3,11 +3,12 @@
   padding-top: 150px;
   display: flex;
   justify-content: center;
-  height: 45vh;
+  height: 90vh;
 }
 
 .about-text {
-  width: 50%;
+  width: 800px;
+  height: 390px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@
 
 .span {
   margin-top: 20px;
+  font-weight: 100;
 }
 
 .about-text > p {
@@ -43,16 +45,17 @@
     align-content: center;
     padding: 0;
     padding-top: 70px;
+    border: 1px solid red;
   }
 
   .about-text {
     width: 90%;
     padding: 20px;
+    padding-bottom: 0;
   }
 
   .social-text {
     display: flex;
-    flex-direction: column;
     margin-bottom: 40px;
     padding: 5px;
     margin-left: 0;

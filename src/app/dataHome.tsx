@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: 'ECHOES OF A CRIME',
-    img: '/01-ecos-crimen.jpg',
-    href: '/features/ecos-de-un-crimen',
+    title: 'JAQUE MATE',
+    href: '/features/jaque-mate',
+    img: '/jaque-mate.jpg',
   },
   {
     title: 'TO CATCH A KILLER',

@@ -35,7 +35,7 @@ const Home = () => {
       )}
       <MainProjectsHome
         projects={projects}
-        title={'We construct Visual Effects.'}
+        // title={'We construct Visual Effects.'}
         subtitle={'We are Rojo Studio.'}
         home={true}
       />

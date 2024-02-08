@@ -1,12 +1,12 @@
 .main-projects-container {
   width: 100%;
-  z-index: 3;
   padding-bottom: 15em;
 }
 
 .home-title {
   text-align: center;
   padding: 30px;
+  margin-bottom: 30px;
 }
 
 .page-info {

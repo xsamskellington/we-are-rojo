@@ -1,8 +1,8 @@
 export const projects = [
   {
-    title: 'ECHOES OF A CRIME',
-    href: '/features/ecos-de-un-crimen',
-    img: '/01-ecos-crimen.jpg',
+    title: 'JAQUE MATE',
+    href: '/features/jaque-mate',
+    img: '/jaque-mate.jpg',
   },
   {
     title: 'TO CATCH A KILLER',
@@ -30,8 +30,8 @@ export const projects = [
     img: '/30-noches-ex.jpg',
   },
   {
-    title: 'JAQUE MATE',
-    href: '/features/jaque-mate',
-    img: '/jaque-mate.jpg',
+    title: 'ECHOES OF A CRIME',
+    href: '/features/ecos-de-un-crimen',
+    img: '/01-ecos-crimen.jpg',
   },
 ];

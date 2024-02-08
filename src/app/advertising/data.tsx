@@ -1,9 +1,10 @@
 export const projects = [
   {
-    title: 'SWAROVSKI | METAMORPHOSIS',
-    href: '/advertising/swarovski/metamorphosis',
-    img: '/swarovsky-metamorphosis.jpg',
+    title: 'NETFLIX | ABRAZA TODO LO QUE ERES',
+    href: '/advertising/netflix/norma',
+    img: '/netflix-norma.jpg',
   },
+
   {
     title: 'SAMGUNG | TECH GOES GREEN | A CHIP WITH CONSCIENCE',
     href: '/advertising/samsung/chip-with-conscience',
@@ -25,8 +26,8 @@ export const projects = [
     img: '/bk-confusing-times.jpg',
   },
   {
-    title: 'NETFLIX | ABRAZA TODO LO QUE ERES',
-    href: '/advertising/netflix/norma',
-    img: '/netflix-norma.jpg',
+    title: 'SWAROVSKI | METAMORPHOSIS',
+    href: '/advertising/swarovski/metamorphosis',
+    img: '/swarovsky-metamorphosis.jpg',
   },
 ];
