@@ -25,6 +25,21 @@
   background-color: transparent;
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.arrow-img {
+  background-color: transparent;
+  animation: bounce 1s infinite;
+}
+
 .arrow > p {
   font-weight: 700;
   padding-right: 10px;

@@ -1,13 +1,7 @@
 import type { Metadata } from 'next';
-import { Roboto_Mono } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-
-const roboto = Roboto_Mono({
-  subsets: ['latin'],
-  weight: ['100', '500', '700'],
-});
 
 export const metadata: Metadata = {
   title: 'ROJO Studio',
@@ -20,7 +14,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
         <Header />
         {children}
         <Footer />

@@ -126,4 +126,9 @@ p {
   .project-title {
     padding-bottom: 30px;
   }
+
+  .home-title {
+    padding: 0;
+    text-align: center;
+  }
 }

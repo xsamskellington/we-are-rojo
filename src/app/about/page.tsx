@@ -40,7 +40,7 @@ const Page = () => {
         </div>
 
         <Image
-          src="/studio.jpeg"
+          src="/studio.jpg"
           alt="studio"
           width={deviceMobile ? 450 : 700}
           height={deviceMobile ? 300 : 400}
