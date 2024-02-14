@@ -32,11 +32,18 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="sections">
-        {deviceMobile ? <MobileHeader /> : <DesktopHeader />}
-      </div>
-    </header>
+    <>
+      {deviceMobile ? (
+        <header className="mobile-header">
+          <MobileHeader />
+        </header>
+      ) : (
+        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+          <DesktopHeader />
+          <div className="sections"></div>
+        </header>
+      )}
+    </>
   );
 };
 
