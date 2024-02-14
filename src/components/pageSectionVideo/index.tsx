@@ -8,9 +8,17 @@ export interface PageSectionVideoProps {
 }
 
 const PageSectionVideo = ({ src }: PageSectionVideoProps) => {
+  const scrollToNextSection = () => {
+    const nextPosition = window.scrollY + window.innerHeight;
+
+    window.scrollTo({
+      top: nextPosition,
+      behavior: 'smooth',
+    });
+  };
   return (
     <>
-      <div className="arrow">
+      <div onClick={scrollToNextSection} className="arrow">
         <p>LATEST WORK</p>
         <Image
           src={BottomArrow}
