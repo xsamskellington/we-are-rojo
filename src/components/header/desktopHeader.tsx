@@ -14,7 +14,7 @@ const DesktopHeader = () => {
   return (
     <div className="section-menu-desktop">
       <a href={'/'} className="logo">
-        <Image src={Rojo} alt="logo" width={80} height={50} />
+        <Image src={Rojo} alt="rojo studio" width={80} height={50} />
       </a>
       {menuSections.map((section, index) => (
         <>

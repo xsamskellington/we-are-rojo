@@ -37,7 +37,7 @@ const MobileHeader = () => {
   return (
     <>
       <button className="mobile-menu-button" onClick={handleButtonClick}>
-        <Image src={MobileMenu} alt="logo" width={25} height={25} />
+        <Image src={MobileMenu} alt="rojo studio" width={25} height={25} />
       </button>
       {isOpen && (
         <div className="mobile-menu-container" ref={mobileMenuRef}>

@@ -18,7 +18,12 @@ const Footer = () => {
               className="social-icon"
               key={social.title}
             >
-              <Image src={social.svg} alt="logo" width={25} height={25} />
+              <Image
+                src={social.svg}
+                alt={social.title}
+                width={25}
+                height={25}
+              />
             </a>
           ))}
         </div>

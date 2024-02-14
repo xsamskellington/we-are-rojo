@@ -41,7 +41,7 @@ const Page = () => {
 
         <Image
           src="/studio.jpg"
-          alt="studio"
+          alt="rojo studio"
           width={deviceMobile ? 450 : 700}
           height={deviceMobile ? 300 : 400}
         />
