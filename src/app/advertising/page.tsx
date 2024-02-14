@@ -13,7 +13,7 @@ const Page = () => {
 
       <MainProjectsHome
         title={'ADVERTISING'}
-        subtitle={'We create visual effects for advertising'}
+        subtitle={'We create visual effects for ads'}
         projects={projects}
         home={false}
       />

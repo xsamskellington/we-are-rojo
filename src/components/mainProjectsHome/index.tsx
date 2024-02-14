@@ -6,10 +6,11 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
     <div className="main-projects-container">
       {home ? (
         <div className="home-title">
+          <br></br>
+          <br></br>
           <h1 className="home-subtitle"> {subtitle}</h1>
           <br></br>
           <br></br>
-          <h1> LATEST WORKS </h1>
         </div>
       ) : (
         <div className="page-info">
