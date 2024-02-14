@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const BackArrow = ({ href }: any) => {
   return (
-    <div className="arrow">
+    <div>
       <Link href={href}>
         <Image src={ArrowSvg} alt="back arrow" width={25} height={25} />
       </Link>
