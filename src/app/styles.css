@@ -7,7 +7,7 @@
 /* Mobile */
 @media (max-width: 700px) {
   .home-content {
-    margin-top: 20px;
+    overflow-x: hidden;
   }
 }
 
