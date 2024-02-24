@@ -10,8 +10,17 @@ const Page = () => {
       />
       <div className="info-container">
         <h1 className="title">THE TANGALANGA METHOD</h1>
+        <div className="synopsis">
+          <h3>
+            <span>SYNOPSIS</span>
+          </h3>
+          <br></br>
+          <p>
+            {`Jorge Rizzi is a shy office worker who cannot speak in public. After the hospitalization of his friend and confidant, he begins to experience a series of changes in his life through hypnosis.`}
+          </p>
+        </div>
         <div className="credits">
-          <div className="vfx-credits">
+          <div className="column-left">
             <p className="text">
               <span>VFX Sup:</span> Natalia Páez{' '}
             </p>
@@ -34,6 +43,14 @@ const Page = () => {
               <span>DOP:</span> Daniel Ortega
             </p>
           </div>
+        </div>
+        <div className="credits">
+          <p className="column-left">
+            <span>Release Date:</span> Jan 2023{' '}
+          </p>
+          <p className="text">
+            <span>VFX Shots:</span> 12{' '}
+          </p>
         </div>
         <BackArrow href={'/features'} />
       </div>

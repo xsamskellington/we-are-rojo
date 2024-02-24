@@ -10,8 +10,17 @@ const Page = () => {
       />
       <div className="info-container">
         <h1 className="title">TO CATCH A KILLER</h1>
+        <div className="synopsis">
+          <h3>
+            <span>SYNOPSIS</span>
+          </h3>
+          <br></br>
+          <p>
+            {`Baltimore. New Year's Eve. A talented but troubled police officer (Shailene Woodley) is recruited by the FBI's chief investigator (Ben Mendelsohn) to help profile and track down a disturbed individual terrorizing the city.`}
+          </p>
+        </div>
         <div className="credits">
-          <div className="vfx-credits">
+          <div className="column-left">
             <p className="text">
               <span>VFX Sup:</span> Jonathan Monroig{' '}
             </p>
@@ -34,6 +43,14 @@ const Page = () => {
               <span>DOP:</span> Javier Juliá
             </p>
           </div>
+        </div>
+        <div className="credits">
+          <p className="column-left">
+            <span>Release Date:</span> Apr 2023{' '}
+          </p>
+          <p className="text">
+            <span>VFX Shots:</span> 149{' '}
+          </p>
         </div>
         <BackArrow href={'/features'} />
       </div>

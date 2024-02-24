@@ -10,8 +10,15 @@ const Page = () => {
       />
       <div className="info-container">
         <h1 className="title">WHO KILLED SARA?</h1>
+        <div className="synopsis">
+          <h3>
+            <span>SYNOPSIS</span>
+          </h3>
+          <br></br>
+          <p>{`--`}</p>
+        </div>
         <div className="credits">
-          <div className="vfx-credits">
+          <div className="column-left">
             <p className="text">
               <span>VFX Sup:</span> Jonathan Monroig{' '}
             </p>
@@ -31,6 +38,14 @@ const Page = () => {
               <span>DOP:</span> Rodrigo Mariña
             </p>
           </div>
+        </div>
+        <div className="credits">
+          <p className="column-left">
+            <span>Release Date:</span> Feature TV Serie{' '}
+          </p>
+          <p className="text">
+            <span>VFX Shots:</span> 289{' '}
+          </p>
         </div>
         <BackArrow href={'/episodic'} />
       </div>

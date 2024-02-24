@@ -21,11 +21,13 @@ const Page = () => {
       <div className="about-container">
         <div className="about-text">
           <p>
-            We are a Studio specialized in Visual Effects, Post-production
-            services & Color Grading for advertising,TV series and films.
+            ROJO Studio is a post-production company based in Buenos Aires. We
+            specialize in High-End Visual Effects. From concept art to design
+            and development, color grading and lab services for films and
+            episodics.
             <span className="span">
-              Our productions are made by an accomplished VFX Team,the editorial
-              department & Color Grading artists and assistants.
+              We are growing constantly, looking for new challenges and projects
+              to take on.
             </span>
           </p>
 

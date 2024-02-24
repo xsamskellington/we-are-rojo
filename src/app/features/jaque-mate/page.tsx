@@ -10,8 +10,17 @@ const Page = () => {
       />
       <div className="info-container">
         <h1 className="title">JAQUE MATE</h1>
+        <div className="synopsis">
+          <h3>
+            <span>SYNOPSIS</span>
+          </h3>
+          <br></br>
+          <p>
+            {`A retired secret agent is forced to return to duty when his niece is taken hostage and he must steal a secret formula for her rescue.`}
+          </p>
+        </div>
         <div className="credits">
-          <div className="vfx-credits">
+          <div className="column-left">
             <p className="text">
               <span>VFX Sup:</span> Jonathan Monroig{' '}
             </p>
@@ -31,6 +40,14 @@ const Page = () => {
               <span>DOP:</span> Bill Nieto
             </p>
           </div>
+        </div>
+        <div className="credits">
+          <p className="column-left">
+            <span>Release Date:</span> Jan 2024{' '}
+          </p>
+          <p className="text">
+            <span>VFX Shots:</span> 196{' '}
+          </p>
         </div>
         <BackArrow href={'/features'} />
       </div>

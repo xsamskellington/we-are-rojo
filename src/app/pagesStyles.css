@@ -16,6 +16,12 @@
   align-items: flex-start;
 }
 
+.synopsis {
+  width: 90%;
+  padding: 30px;
+  padding-left: 0;
+}
+
 .credits {
   width: 100%;
   padding: 30px;
@@ -28,7 +34,8 @@
   margin-bottom: 10px;
 }
 
-.vfx-credits {
+.column-left {
+  width: 300px;
   margin-right: 30px;
 }
 

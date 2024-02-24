@@ -5,6 +5,7 @@ import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: 'ROJO Studio',
+  description: `Visual Effects | Buenos Aires, Argentina. ROJO Studio is a post-production company based in Buenos Aires. We specialize in High-End Visual Effects. From concept art to design and development, color grading and lab services for films and episodics.`,
 };
 
 export default function RootLayout({

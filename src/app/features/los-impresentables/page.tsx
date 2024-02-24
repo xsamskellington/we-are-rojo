@@ -10,8 +10,18 @@ const Page = () => {
       />
       <div className="info-container">
         <h1 className="title">THE UNPRESENTABLES</h1>
+        <div className="synopsis">
+          <h3>
+            <span>SYNOPSIS</span>
+          </h3>
+          <br></br>
+          <p>
+            {`A teenager recently expelled from the Naval Academy in early 70's Argentina befriends four notorious youths in a small city near Buenos Aires, partakes in their pranks and aspirations, and in the process experiences first love.
+`}
+          </p>
+        </div>
         <div className="credits">
-          <div className="vfx-credits">
+          <div className="column-left">
             <p className="text">
               <span>VFX Sup:</span> Jonathan Monroig{' '}
             </p>
@@ -34,6 +44,15 @@ const Page = () => {
               <span>DOP:</span> Marcelo Camorino
             </p>
           </div>
+        </div>
+
+        <div className="credits">
+          <p className="column-left">
+            <span>Release Date:</span> Feature Film{' '}
+          </p>
+          <p className="text">
+            <span>VFX Shots:</span> 125{' '}
+          </p>
         </div>
         <BackArrow href={'/features'} />
       </div>
