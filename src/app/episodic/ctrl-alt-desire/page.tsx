@@ -17,7 +17,8 @@ const Page = () => {
           </h3>
           <br></br>
           <p>
-            {`Hell-bent on exacting revenge and proving he was framed for his sister's murder, Álex sets out to unearth much more than the crime's real culprit.`}
+            {`Chronicles the life and downfall of Grant Amato, who was convicted of murdering his parents and brother following an obsessive relationship with an internet cam model.
+`}
           </p>
         </div>
         <div className="credits">
@@ -29,7 +30,7 @@ const Page = () => {
               <span>VFX Prod:</span> Ariadna Ortiz{' '}
             </p>
             <p className="text">
-              <span>Art Director:</span> Matias Sciaini - Laura Toscano{' '}
+              <span>Art Directors:</span> Matias Sciaini - Laura Toscano{' '}
             </p>
           </div>
 
@@ -44,10 +45,10 @@ const Page = () => {
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> May 2022{' '}
+            <span>Release Date:</span> April 17, 2024. Feature TV Serie{' '}
           </p>
           <p className="text">
-            <span>VFX Shots:</span> 5{' '}
+            <span>VFX Shots:</span> 289{' '}
           </p>
         </div>
         <BackArrow href={'/episodic'} />

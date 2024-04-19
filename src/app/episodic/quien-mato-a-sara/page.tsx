@@ -15,7 +15,8 @@ const Page = () => {
             <span>SYNOPSIS</span>
           </h3>
           <br></br>
-          <p>{`--`}</p>
+          <p>{`Synopsis: Hell-bent on exacting revenge and proving he was framed for his sister's murder, Álex sets out to unearth much more than the crime's real culprit.
+`}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -41,10 +42,10 @@ const Page = () => {
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Feature TV Serie{' '}
+            <span>Release Date:</span> May 2022{' '}
           </p>
           <p className="text">
-            <span>VFX Shots:</span> 289{' '}
+            <span>VFX Shots:</span> 5{' '}
           </p>
         </div>
         <BackArrow href={'/episodic'} />

@@ -40,7 +40,7 @@ const Page = () => {
               <span>Directors:</span> Santiago Korovsky - Diego Nuñez Irigoyen{' '}
             </p>
             <p className="text">
-              <span>DOP:</span> Valeria Mariana Gonzalez - Roman Kasseroller
+              <span>DOP:</span> Roman Kasseroller
             </p>
           </div>
         </div>
