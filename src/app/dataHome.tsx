@@ -10,9 +10,9 @@ export const projects = [
     href: '/features/misantropo',
   },
   {
-    title: 'COMMUNITY SQUAD',
-    img: '/03-division-palermo.jpg',
-    href: '/episodic/division-palermo',
+    title: 'CTRL + ALT + DESIRE',
+    href: '/episodic/ctrl-alt-desire',
+    img: '/ctrl-alt-desire.jpg',
   },
   {
     title: 'ADIOS, BUENOS AIRES',
