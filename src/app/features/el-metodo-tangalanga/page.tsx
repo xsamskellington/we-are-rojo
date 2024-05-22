@@ -1,23 +1,28 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import '../../pagesStyles.css';
+import { useLangHook } from '@/app/hooks/setLangHook';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.tangalanga;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/896349740?h=9857f375da'}
       />
       <div className="info-container">
-        <h1 className="title">THE TANGALANGA METHOD</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`Jorge Rizzi is a shy office worker who cannot speak in public. After the hospitalization of his friend and confidant, he begins to experience a series of changes in his life through hypnosis.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -31,22 +36,19 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Varsovia Films
-            </p>
-            <p className="text">
-              <span>Production:</span> Diego Dubcovsky
+              <span>{productionCompany}:</span> Varsovia Films
             </p>
             <p className="text">
               <span>Director:</span> Mateo Bendesky
             </p>
             <p className="text">
-              <span>DOP:</span> Daniel Ortega
+              <span>{DOP}:</span> Daniel Ortega
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Jan 2023{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 12{' '}

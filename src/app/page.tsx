@@ -1,14 +1,18 @@
 'use client';
 import { useEffect, useState } from 'react';
-
 import MainProjectsHome from '@/components/mainProjectsHome';
-import { projects } from './dataHome';
-import PageSectionVideo from '@/components/pageSectionVideo';
-import './styles.css';
 import VimeoPlayer from '@/components/vimeoPlayer';
+import PageSectionVideo from '@/components/pageSectionVideo';
+import { useLangHook } from './hooks/setLangHook';
+import { projects } from './dataHome';
+import './styles.css';
 
 const Home = () => {
   const [deviceMobile, setDeviceMobile] = useState(false);
+  const { useLanguageSwitcher } = useLangHook();
+
+  const i18n = useLanguageSwitcher();
+  const { title } = i18n.home;
 
   useEffect(() => {
     const isMobile =
@@ -33,12 +37,7 @@ const Home = () => {
           }
         />
       )}
-      <MainProjectsHome
-        projects={projects}
-        // title={'We construct Visual Effects.'}
-        subtitle={'WE ARE ROJO STUDIO'}
-        home={true}
-      />
+      <MainProjectsHome projects={projects} subtitle={title} home={true} />
     </div>
   );
 };

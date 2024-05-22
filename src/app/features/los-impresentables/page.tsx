@@ -1,24 +1,30 @@
+'use client';
+
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.impresentables;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/891896887?h=eede2924eb'}
       />
       <div className="info-container">
-        <h1 className="title">THE UNPRESENTABLES</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`A teenager recently expelled from the Naval Academy in early 70's Argentina befriends four notorious youths in a small city near Buenos Aires, partakes in their pranks and aspirations, and in the process experiences first love.
-`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -35,20 +41,20 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Wapa
+              <span>{productionCompany}</span> Lockdown Films
             </p>
             <p className="text">
               <span>Director:</span> Laszlo Papas
             </p>
             <p className="text">
-              <span>DOP:</span> Marcelo Camorino
+              <span>{DOP}:</span> Marcelo Camorino
             </p>
           </div>
         </div>
 
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Feature Film{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 125{' '}

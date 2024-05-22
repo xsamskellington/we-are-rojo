@@ -1,8 +1,16 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.ctrlAltDesire;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
@@ -10,16 +18,13 @@ const Page = () => {
       />
 
       <div className="info-container">
-        <h1 className="title">Ctrl + Alt + Desire</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`Chronicles the life and downfall of Grant Amato, who was convicted of murdering his parents and brother following an obsessive relationship with an internet cam model.
-`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -36,7 +41,7 @@ const Page = () => {
 
           <div className="production-credits">
             <p className="text">
-              <span>Production Company:</span> Ark Media
+              <span>{productionCompany}:</span> Ark Media
             </p>
             <p className="text">
               <span>Director:</span> Colin Archdeacon{' '}
@@ -45,7 +50,7 @@ const Page = () => {
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> April 17, 2024. Feature TV Serie{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 289{' '}
