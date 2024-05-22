@@ -3,6 +3,7 @@ import MobileMenu from '../images/mobile-menu.svg';
 import Image from 'next/image';
 import { menuSectionsMobile } from './data';
 import Link from 'next/link';
+import LanguageSwitch from './languageSwitch';
 
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,6 +60,7 @@ const MobileHeader = () => {
           ))}
         </div>
       )}
+      <LanguageSwitch />
     </>
   );
 };

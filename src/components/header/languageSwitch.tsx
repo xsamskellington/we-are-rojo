@@ -3,7 +3,7 @@ import { useContext, useState } from 'react';
 
 const LanguageSwitch = () => {
   const { setLanguage } = useContext(LangContext);
-  const [activeLanguage, setActiveLanguage] = useState('');
+  const [activeLanguage, setActiveLanguage] = useState('en');
 
   const handleLanguage = (lang: string) => {
     setLanguage(lang);
