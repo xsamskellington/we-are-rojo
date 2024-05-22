@@ -22,10 +22,13 @@ export const english = {
     about: 'ABOUT',
   },
   commonWording: {
-    synopsis: 'SYNOPSIS',
+    synopsisWord: 'SYNOPSIS',
     releaseDate: 'Release Date',
-    productora: 'Production Company',
-    contacto: 'CONTACT',
+    productionCompany: 'Production Company',
+    contact: 'CONTACT',
+    DOP: 'DOP',
+    producer: 'Producer',
+    creativeDirector: 'Creative Director',
   },
   misantropo: {
     title: 'TO CATCH A KILLER',

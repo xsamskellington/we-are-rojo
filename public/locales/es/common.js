@@ -22,10 +22,13 @@ export const spanish = {
     about: 'NOSOTROS',
   },
   commonWording: {
-    synopsis: 'SYNOPSIS',
+    synopsisWord: 'SINOPSIS',
     releaseDate: 'Fecha de Estreno',
-    productora: 'Productora',
-    contacto: 'CONTACTO',
+    productionCompany: 'Productora',
+    contact: 'CONTACTO',
+    DOP: 'DF',
+    producer: 'Productor',
+    creativeDirector: 'Director Creativo',
   },
   misantropo: {
     title: 'MISANTROPO',
