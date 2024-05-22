@@ -2,9 +2,12 @@
 import { useLangHook } from '@/app/hooks/setLangHook';
 import './styles.css';
 import Link from 'next/link';
+import { LangContext } from '@/app/providers/provider';
+import { useContext } from 'react';
 
 const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
   const { useLanguageSwitcher } = useLangHook();
+  const { lang } = useContext(LangContext);
 
   const i18n = useLanguageSwitcher();
   const { works } = i18n.home;
@@ -36,7 +39,7 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
             key={project.title}
           >
             <div className="project-title">
-              <p>{project.title}</p>
+              <p>{lang == 'es' ? project.titleEs : project.titleEn}</p>
             </div>
           </Link>
         ))}

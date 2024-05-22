@@ -16,42 +16,51 @@ export const socialMedia = [
 
 export const menuSections = [
   {
-    title: 'REEL',
+    titleEn: 'REEL',
+    titleEs: 'REEL',
     href: '/reel',
   },
   {
-    title: 'FEATURES',
+    titleEn: 'FEATURES',
+    titleEs: 'LARGOMETRAJES',
     href: '/features',
   },
   {
-    title: 'EPISODIC',
+    titleEn: 'EPISODIC',
+    titleEs: 'SERIES',
     href: '/episodic',
   },
   {
-    title: 'ADVERTISING',
+    titleEn: 'ADVERTISING',
+    titleEs: 'COMERCIALES',
     href: '/advertising',
   },
   {
-    title: 'ABOUT',
+    titleEn: 'ABOUT',
+    titleEs: 'NOSOTROS',
     href: '/about',
   },
 ];
 
 export const menuSectionsMobile = [
   {
-    title: 'FEATURES',
+    titleEn: 'FEATURES',
+    titleEs: 'LARGOMETRAJES',
     href: '/features',
   },
   {
-    title: 'EPISODIC',
+    titleEn: 'EPISODIC',
+    titleEs: 'SERIES',
     href: '/episodic',
   },
   {
-    title: 'ADVERTISING',
+    titleEn: 'ADVERTISING',
+    titleEs: 'COMERCIALES',
     href: '/advertising',
   },
   {
-    title: 'ABOUT',
+    titleEn: 'ABOUT',
+    titleEs: 'NOSOTROS',
     href: '/about',
   },
 ];
