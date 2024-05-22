@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { LangProvider } from '../app/providers/provider';
 
 export const metadata: Metadata = {
   title: 'ROJO Studio',
@@ -14,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -24,9 +25,11 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <LangProvider>
+          <Header />
+          {children}
+          <Footer />
+        </LangProvider>
       </body>
     </html>
   );
