@@ -1,8 +1,22 @@
+import { LangContext } from '@/app/providers/provider';
+import { useContext } from 'react';
+
 const LanguageSwitch = () => {
+  const { setLanguage } = useContext(LangContext);
+
+  const handleLanguage = (lang: string) => {
+    setLanguage(lang);
+  };
+
   return (
     <div className="language">
-      <button className="section">ES</button>/
-      <button className="section">EN</button>
+      <button onClick={() => handleLanguage('es')} className="section">
+        ES
+      </button>
+      /
+      <button onClick={() => handleLanguage('en')} className="section">
+        EN
+      </button>
     </div>
   );
 };
