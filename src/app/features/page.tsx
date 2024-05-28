@@ -1,8 +1,17 @@
+'use client';
+
 import PageSectionVideo from '@/components/pageSectionVideo';
-import { projects } from './data';
 import MainProjectsHome from '@/components/mainProjectsHome';
+import { useLangHook } from '../hooks/setLangHook';
+import { projects } from './data';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+
+  const i18n = useLanguageSwitcher();
+  const { features } = i18n.navbar;
+  const { featuresTitle } = i18n.pages;
+
   return (
     <div>
       <PageSectionVideo
@@ -11,8 +20,8 @@ const Page = () => {
         }
       />
       <MainProjectsHome
-        title={'FEATURES'}
-        subtitle={'We create visual effects for films'}
+        title={features}
+        subtitle={featuresTitle}
         projects={projects}
         home={false}
       />

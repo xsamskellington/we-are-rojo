@@ -1,23 +1,29 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.divisionPalermo;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/891895772?h=9cbcea3883'}
       />
       <div className="info-container">
-        <h1 className="title">COMMUNITY SQUAD</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {` A ragtag civilian patrol squad created to improve the image of the police inadvertently put their lives at risk when confronting some strange criminals.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -34,19 +40,19 @@ const Page = () => {
 
           <div className="production-credits">
             <p className="text">
-              <span>Production Company:</span> K&S Films
+              <span>{productionCompany}:</span> K&S Films
             </p>
             <p className="text">
-              <span>Directors:</span> Santiago Korovsky - Diego Nuñez Irigoyen{' '}
+              <span>Director:</span> Santiago Korovsky - Diego Nuñez Irigoyen{' '}
             </p>
             <p className="text">
-              <span>DOP:</span> Roman Kasseroller
+              <span>{DOP}:</span> Roman Kasseroller
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Feb 2023{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 110{' '}

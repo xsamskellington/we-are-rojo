@@ -1,23 +1,29 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.misantropo;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/891897293?h=53015a9e9f'}
       />
       <div className="info-container">
-        <h1 className="title">TO CATCH A KILLER</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`Baltimore. New Year's Eve. A talented but troubled police officer (Shailene Woodley) is recruited by the FBI's chief investigator (Ben Mendelsohn) to help profile and track down a disturbed individual terrorizing the city.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -34,19 +40,19 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> FilmNation Entertainment
+              <span>{productionCompany}:</span> FilmNation Entertainment
             </p>
             <p className="text">
               <span>Director:</span> Damián Szifron
             </p>
             <p className="text">
-              <span>DOP:</span> Javier Juliá
+              <span>{DOP}:</span> Javier Juliá
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Apr 2023{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 149{' '}

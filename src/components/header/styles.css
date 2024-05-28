@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   height: 65px;
-  width: 100%;
+  width: 98%;
   padding: 5px 15px;
   position: fixed;
   z-index: 4;
@@ -63,6 +63,12 @@
   font-weight: 700;
 }
 
+.language {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+}
+
 .mobile-header {
   display: flex;
   justify-content: space-between;
@@ -101,30 +107,30 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+  .header {
+    display: flex;
+    width: 98%;
+    position: fixed;
+    z-index: 3;
+  }
+
   .sections {
     width: 100%;
     justify-content: space-between;
-  }
-
-  .header {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
   }
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
+  .header {
+    display: flex;
+    width: 98%;
+    position: fixed;
+    z-index: 3;
+  }
+
   .sections {
     width: 100%;
     justify-content: space-between;
-  }
-
-  .header {
-    display: flex;
-    width: 100%;
-    position: fixed;
-    z-index: 3;
   }
 }

@@ -1,7 +1,17 @@
+'use client';
+import { useLangHook } from '@/app/hooks/setLangHook';
 import './styles.css';
 import Link from 'next/link';
+import { LangContext } from '@/app/providers/provider';
+import { useContext } from 'react';
 
 const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
+  const { useLanguageSwitcher } = useLangHook();
+  const { lang } = useContext(LangContext);
+
+  const i18n = useLanguageSwitcher();
+  const { works } = i18n.home;
+
   return (
     <div className="main-projects-container">
       {home ? (
@@ -16,7 +26,7 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
         <div className="page-info">
           <h1>{title}</h1>
           <h3> {subtitle}</h3>
-          <h2 className="work">WORKS</h2>
+          <h2 className="work">{works}</h2>
         </div>
       )}
 
@@ -29,7 +39,7 @@ const MainProjectsHome = ({ projects, home, title, subtitle }: any) => {
             key={project.title}
           >
             <div className="project-title">
-              <p>{project.title}</p>
+              <p>{lang == 'es' ? project.titleEs : project.titleEn}</p>
             </div>
           </Link>
         ))}

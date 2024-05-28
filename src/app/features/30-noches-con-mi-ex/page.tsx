@@ -1,23 +1,29 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.NochesEx;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/891894880?h=40279263ee'}
       />
       <div className="info-container">
-        <h1 className="title">30 NIGHTS WITH MY EX</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`At the request of their daughter, a separated couple has to live together for thirty days after the ex-wife comes from a long psychiatric hospitalization.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -34,19 +40,19 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Patagonik
+              <span>{productionCompany}:</span> Patagonik
             </p>
             <p className="text">
               <span>Director:</span> Adrián Suar
             </p>
             <p className="text">
-              <span>DOP:</span> Félix Monti
+              <span>{DOP}:</span> Félix Monti
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Ago 2022{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 42{' '}

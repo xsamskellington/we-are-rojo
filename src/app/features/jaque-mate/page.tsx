@@ -1,23 +1,29 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.jaqueMate;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/907567026?h=1d0426e025'}
       />
       <div className="info-container">
-        <h1 className="title">JAQUE MATE</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`A retired secret agent is forced to return to duty when his niece is taken hostage and he must steal a secret formula for her rescue.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -31,19 +37,19 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Patagonik
+              <span>{productionCompany}:</span> Patagonik
             </p>
             <p className="text">
               <span>Director:</span> Jorge Nisco
             </p>
             <p className="text">
-              <span>DOP:</span> Bill Nieto
+              <span>{DOP}:</span> Bill Nieto
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Jan 2024{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span> 196{' '}

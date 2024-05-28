@@ -40,7 +40,6 @@ const Header = () => {
       ) : (
         <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
           <DesktopHeader />
-          <div className="sections"></div>
         </header>
       )}
     </>

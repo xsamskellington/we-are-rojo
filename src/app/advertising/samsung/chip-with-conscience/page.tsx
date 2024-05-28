@@ -1,8 +1,14 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { productionCompany, producer, DOP } = i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
@@ -14,23 +20,25 @@ const Page = () => {
         </h1>
         <div className="credits">
           <div className="vfx-credits">
-            <p className="text">
-              <span>VFX Sup:</span> Jonathan Monroig{' '}
-            </p>
+            <div className="column-left">
+              <p className="text">
+                <span>VFX Sup:</span> Jonathan Monroig{' '}
+              </p>
+            </div>
           </div>
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Can Can Club - 1stAveMachine
+              <span>{productionCompany}:</span> Can Can Club - 1stAveMachine
             </p>
             <p className="text">
               <span>Director:</span> Becho & Mab
             </p>
             <p className="text">
-              <span>Producer:</span> Mechi Serrano
+              <span>{producer}:</span> Mechi Serrano
             </p>
             <p className="text">
-              <span>DOP:</span> Lautaro Isern
+              <span>{DOP}:</span> Lautaro Isern
             </p>
           </div>
         </div>

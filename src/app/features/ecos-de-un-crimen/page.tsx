@@ -1,28 +1,29 @@
+'use client';
 import VimeoPlayer from '@/components/vimeoPlayer';
-import '../../pagesStyles.css';
 import BackArrow from '@/components/backArrow';
+import { useLangHook } from '@/app/hooks/setLangHook';
+import '../../pagesStyles.css';
 
 const Page = () => {
+  const { useLanguageSwitcher } = useLangHook();
+  const i18n = useLanguageSwitcher();
+  const { title, synopsis, date } = i18n.ecosCrimen;
+  const { synopsisWord, productionCompany, releaseDate, DOP } =
+    i18n.commonWording;
+
   return (
     <div className="page-container">
       <VimeoPlayer
         src={'https://player.vimeo.com/video/891896024?h=9b88673625'}
       />
       <div className="info-container">
-        <h1 className="title">ECHOES OF A CRIME</h1>
+        <h1 className="title">{title}</h1>
         <div className="synopsis">
           <h3>
-            <span>SYNOPSIS</span>
+            <span>{synopsisWord}</span>
           </h3>
           <br></br>
-          <p>
-            {`Julián Lemar, a bestselling thriller writer, goes on vacation with
-            his family to a cabin in the woods. The first night, during a severe
-            storm, the power goes out and a woman shows up desperately asking
-            for help: her husband killed her son and now he's after her. From
-            that moment on, danger and deception are a constant threat and for
-            Julián a hellish night begins until he discovers the truth.`}
-          </p>
+          <p>{synopsis}</p>
         </div>
         <div className="credits">
           <div className="column-left">
@@ -39,19 +40,19 @@ const Page = () => {
 
           <div>
             <p className="text">
-              <span>Production Company:</span> Particular Crowd-Tieless Media
+              <span>{productionCompany}:</span> Particular Crowd-Tieless Media
             </p>
             <p className="text">
               <span>Director:</span> Cristian Bernard
             </p>
             <p className="text">
-              <span>DOP:</span> Andrés Mazzon
+              <span>{DOP}:</span> Andrés Mazzon
             </p>
           </div>
         </div>
         <div className="credits">
           <p className="column-left">
-            <span>Release Date:</span> Jan 2022{' '}
+            <span>{releaseDate}:</span> {date}{' '}
           </p>
           <p className="text">
             <span>VFX Shots:</span>13{' '}

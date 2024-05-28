@@ -1,10 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import MobileMenu from '../images/mobile-menu.svg';
 import Image from 'next/image';
 import { menuSectionsMobile } from './data';
 import Link from 'next/link';
+import LanguageSwitch from './languageSwitch';
+import { LangContext } from '@/app/providers/provider';
 
 const MobileHeader = () => {
+  const { lang } = useContext(LangContext);
   const [isOpen, setIsOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
@@ -49,16 +52,17 @@ const MobileHeader = () => {
           {menuSectionsMobile.map((section, index) => (
             <Link
               href={section.href}
-              key={section.title}
+              key={lang == 'es' ? section.titleEs : section.titleEn}
               className="mobile-sections"
             >
               <p className="options" onClick={() => setIsOpen(false)}>
-                {section.title}
+                {lang == 'es' ? section.titleEs : section.titleEn}
               </p>
             </Link>
           ))}
         </div>
       )}
+      <LanguageSwitch />
     </>
   );
 };
