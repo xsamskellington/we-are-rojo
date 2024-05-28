@@ -29,7 +29,7 @@ const Page = () => {
         <div className="about-text">
           <p>
             {text}
-            <span className="span">{subtext}</span>s
+            <span className="span">{subtext}</span>
           </p>
 
           <div className="social-text">
