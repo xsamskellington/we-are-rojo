@@ -8,7 +8,7 @@ const Footer = () => {
       <p className="country"> BUENOS AIRES, ARGENTINA</p>
       <div className="legal">
         <div>
-          <p>Copyright©2024 Rojo Studios</p>
+          <p>Copyright©2024 ROJO Studio</p>
         </div>
         <div className="social-media">
           {socialMedia.map((social) => (

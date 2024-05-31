@@ -7,8 +7,8 @@ export const projects = [
   },
 
   {
-    titleEn: 'SAMGUNG | TECH GOES GREEN | A CHIP WITH CONSCIENCE',
-    titleEs: 'SAMGUNG | TECH GOES GREEN | A CHIP WITH CONSCIENCE',
+    titleEn: 'SAMGUNG | TECH GOES GREEN | CONSCIENCE',
+    titleEs: 'SAMGUNG | TECH GOES GREEN | CONSCIENCE',
     href: '/advertising/samsung/chip-with-conscience',
     img: '/samsung-chip.jpg',
   },
