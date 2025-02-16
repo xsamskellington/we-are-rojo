@@ -41,4 +41,10 @@ export const projects = [
     href: '/features/ecos-de-un-crimen',
     img: '/01-ecos-crimen.jpg',
   },
+  {
+    titleEn: 'THE FANTASTIC SISTERS',
+    titleEs: 'LAS HERMANAS FANTASTICAS',
+    href: '/features/las-hermanas-fantasticas',
+    img: '/lhf.jpg',
+  },
 ];
