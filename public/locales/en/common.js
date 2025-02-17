@@ -37,7 +37,7 @@ export const english = {
     date: 'Apr 2023',
   },
   LHF: {
-    title: 'THE FANTASTIC SISTERS',
+    title: '(UN)LUCKY SISTERS',
     synopsis:
       "After their father's death, estranged sisters stumble upon his hidden fortune, forcing them to decide whether to keep the money or do the right thing.",
     date: 'Aug 2024',

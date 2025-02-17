@@ -9,7 +9,7 @@ export const spanish = {
     episodicTitle: 'Creamos efectos visuales para series',
     advertisingTitle: 'Creamos efectos visuales para comerciales',
     aboutUs: {
-      text: 'ROJO Studio es una casa de postproducción localizada en Buenos Aires y Tenerife. Nos especializamos en efectos visuales para largometrajes y series.',
+      text: 'ROJO Studio es un estudio de postproducción localizado en Buenos Aires y Tenerife. Nos especializamos en efectos visuales para largometrajes y series.',
       subtext:
         'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
     },
