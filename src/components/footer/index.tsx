@@ -5,10 +5,13 @@ import { socialMedia } from '../header/data';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p className="country"> BUENOS AIRES, ARGENTINA</p>
+      <p className="country">
+        {' '}
+        BUENOS AIRES, ARGENTINA - ISLAS CANARIAS, ESPAÑA
+      </p>
       <div className="legal">
         <div>
-          <p>Copyright©2024 ROJO Studio</p>
+          <p>Copyright©2025 ROJO Studio </p>
         </div>
         <div className="social-media">
           {socialMedia.map((social) => (
