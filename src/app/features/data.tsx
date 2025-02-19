@@ -1,6 +1,6 @@
 export const projects = [
   {
-    titleEn: 'THE FANTASTIC SISTERS',
+    titleEn: '(UN)LUCKY SISTERS',
     titleEs: 'LAS HERMANAS FANTASTICAS',
     href: '/features/las-hermanas-fantasticas',
     img: '/lhf.jpg',

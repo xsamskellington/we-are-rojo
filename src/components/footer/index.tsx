@@ -11,7 +11,7 @@ const Footer = () => {
       </p>
       <div className="legal">
         <div>
-          <p>COPYRIGHT © 2025 ROJO Studio </p>
+          <p>Copyright©2025 ROJO Studio </p>
         </div>
         <div className="social-media">
           {socialMedia.map((social) => (
