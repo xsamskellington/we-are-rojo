@@ -9,7 +9,7 @@ export const spanish = {
     episodicTitle: 'Creamos efectos visuales para series',
     advertisingTitle: 'Creamos efectos visuales para comerciales',
     aboutUs: {
-      text: 'ROJO Studio es una casa de postproducción localizada en Buenos Aires. Nos especializamos en efectos visuales para largometrajes y series.',
+      text: 'ROJO Studio es un estudio de postproducción localizado en Buenos Aires y Tenerife. Nos especializamos en efectos visuales para largometrajes y series.',
       subtext:
         'Estamos en constante crecimiento, en búsqueda de nuevos desafíos y proyectos.',
     },
@@ -35,6 +35,12 @@ export const spanish = {
     synopsis:
       'Baltimore, la noche de Año Nuevo. Un feroz ataque producido por un único hombre deja un saldo de 29 muertos y ni una sola pista. Eleanor Falco (Shailene Woodley), una retraída pero talentosa mujer policía de bajo rango, es reclutada por el agente especial del FBI Geoffrey Lammark (Ben Mendelsohn) para integrar el equipo a cargo de la identificación y captura del homicida. ',
     date: 'Abril 2023',
+  },
+  LHF: {
+    title: 'LAS HERMANAS FANTASTICAS',
+    synopsis:
+      'Tras la muerte de su padre, unas hermanas enemistadas se topan con su fortuna oculta, lo que las obliga a decidir si quedarse con el dinero o hacer lo correcto.',
+    date: 'Agosto 2024',
   },
   impresentables: {
     title: 'LOS IMPRESENTABLES',

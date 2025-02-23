@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: '(UN)LUCKY SISTERS',
+    titleEs: 'LAS HERMANAS FANTASTICAS',
+    img: 'lhf.jpg',
+    href: '/features/las-hermanas-fantasticas',
+  },
+  {
     titleEn: 'CHECKMATE',
     titleEs: 'JAQUE MATE',
     href: '/features/jaque-mate',
@@ -28,11 +34,5 @@ export const projects = [
     titleEs: 'EL METODO TANGALANGA',
     img: '/05-tangalanga.jpg',
     href: '/features/el-metodo-tangalanga',
-  },
-  {
-    titleEn: 'THE UNPRESENTABLES',
-    titleEs: 'LOS IMPRESENTABLES',
-    img: '/06-impresentables.jpg',
-    href: '/features/los-impresentables',
   },
 ];

@@ -9,7 +9,7 @@ export const english = {
     episodicTitle: 'We create visual effects for episodic',
     advertisingTitle: 'We create visual effects for advertising',
     aboutUs: {
-      text: 'ROJO Studio is a post-production company based in Buenos Aires. We specialize in High-End Visual Effects. From concept art to design and development, color grading and lab services for films and episodics.',
+      text: 'ROJO Studio is a post-production company with bases in Buenos Aires and Tenerife. We specialize in High-End Visual Effects. From concept art to design and development, color grading and lab services for films and episodics.',
       subtext:
         'We are growing constantly, looking for new challenges and projects to take on.',
     },
@@ -35,6 +35,12 @@ export const english = {
     synopsis:
       "Baltimore. New Year's Eve. A talented but troubled police officer (Shailene Woodley) is recruited by the FBI's chief investigator (Ben Mendelsohn) to help profile and track down a disturbed individual terrorizing the city.",
     date: 'Apr 2023',
+  },
+  LHF: {
+    title: '(UN)LUCKY SISTERS',
+    synopsis:
+      "After their father's death, estranged sisters stumble upon his hidden fortune, forcing them to decide whether to keep the money or do the right thing.",
+    date: 'Aug 2024',
   },
   impresentables: {
     title: 'THE UNPRESENTABLES',

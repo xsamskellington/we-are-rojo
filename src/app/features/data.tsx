@@ -1,5 +1,11 @@
 export const projects = [
   {
+    titleEn: '(UN)LUCKY SISTERS',
+    titleEs: 'LAS HERMANAS FANTASTICAS',
+    href: '/features/las-hermanas-fantasticas',
+    img: '/lhf.jpg',
+  },
+  {
     titleEn: 'CHECKMATE',
     titleEs: 'JAQUE MATE',
     href: '/features/jaque-mate',
